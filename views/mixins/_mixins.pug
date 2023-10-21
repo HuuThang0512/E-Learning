@@ -1,0 +1,188 @@
+
+mixin topbarLogin(text="", textBtn = "", linkBtn="#") 
+    .topbar-login 
+        .topbar-left 
+            a.logo.topbar-logo(href="#") 
+                include ../icons/_logo
+        .topbar-right  
+            .topbar-right-login 
+                p= text
+                a(href= linkBtn)
+                    +blurBtnPri(textBtn)
+
+mixin topbarHome() 
+    .topbar 
+        .topbar-home
+            .topbar-left 
+                a.topbar-logo(href="#") 
+                    include ../icons/_logo
+                .topbar-search 
+                    label(for="topbar-search-input").topbar-search-icon
+                        //- include ../images/icons/_icon-search
+                        img(src="./images/icons/icon-search.svg", alt="")
+                    input.topbar-search-input#topbar-search-input(type="text" placeholder="What do you want to learn...")
+            .topbar-right
+                a.topbar-right-home.topbar-right-direction.click-item(href="#") Home 
+                a.topbar-right-courses.topbar-right-direction.click-item(href="#") Courses 
+                a.topbar-right-cart.click-item(href="#") 
+                    include ../icons/_icon-cart
+                .topbar-login-block
+                    a.topbar-home-register(href="./register.html")
+                        +blurBtnPri("Create Account")  
+                    a.topbar-home-signin(href="sign_in.html")
+                        +solidBtnPri("Sign in")
+                img.user-avatar.click-item(srcSet="./images/user-avatar.png 2x", alt="avatar")
+
+mixin cateItem(img="", title="", count="") 
+    .category-item.button
+        .category-item-icon
+            img(srcSet= img, alt="")
+        .category-item-text 
+            .category-item-title= title
+            .category-item-count= count
+
+mixin bestCourse(img, type="code", price=0, desc="", rating="", count="", color="orange")
+    .best-course-item.button
+        .best-course-image
+            img(srcSet= img, alt="") 
+        .best-course-header 
+            .best-course-type(style=`--color: ${color}`)= type
+            .best-course-price= price
+        .best-course-desc.text-hover= desc
+        .best-course-line
+        .best-course-footer     
+            .best-course-rating 
+                include ../icons/_icon-star
+                span= rating
+            .best-course-count 
+                include ../icons/_icon-user
+                span= count
+            
+mixin featureItem(img, type, salePrice, firstPrice="", name, avatar, author, rating, ratingCount, studentCount, level, time, color)
+    .feature-item.button
+        .feature-image 
+            img(srcSet= img, alt="")
+        .feature-content 
+            .feature-content-top 
+                .feature-type(style=`--color: ${color}`)= type
+                .feature-price
+                    if salePrice 
+                        .feature-sale-price= salePrice
+                        .feature-first-price= firstPrice
+                    else 
+                        feature-first-price= firstPrice
+            .feature-name.text-hover= name
+            .feature-author-rating 
+                .feature-author 
+                    .feature-author-avatar 
+                        img(srcSet= avatar, alt="")
+                    .feature-author-name= author
+                .feature-rating     
+                    include ../icons/_icon-star
+                    span.feature-rating-point= rating
+                    span.feature-rating-count= ratingCount 
+            .feature-line 
+            .feature-footer 
+                .feature-count-student.feature-footer-item 
+                    include ../icons/_icon-user
+                    span= studentCount
+                .feature-level.feature-footer-item
+                    include ../icons/_icon-level
+                    span= level
+                .feature-time.feature-footer-item
+                    include ../icons/_icon-clock
+                    span= time
+
+                
+
+
+mixin footer()
+    footer.footer
+        .footer-top 
+            .footer-contact 
+                a.footer-contact-logo(href="#")
+                    include ../icons/_logo
+                .footer-contact-text Aliquam rhoncus ligula est, non pulvinar elitconvallis nec. Donec mattis odio at.
+                .footer-contact-social
+                    a.footer-contact-social-item(href="#")
+                        include ../icons/_icon-facebook
+                    a.footer-contact-social-item(href="#")
+                        include ../icons/_icon-instagram
+                    a.footer-contact-social-item(href="#")
+                        include ../icons/_icon-linkin
+                    a.footer-contact-social-item(href="#")
+                        include ../icons/_icon-twister
+                    a.footer-contact-social-item(href="#")
+                        include ../icons/_icon-youtube
+            .footer-category.footer-list 
+                .footer-list-header Top 4 Category
+                ul
+                    li.footer-list-item
+                        a(href="#") Development
+                    li.footer-list-item
+                        a(href="#") Finance &#38; Accounting
+                    li.footer-list-item
+                        a(href="#") Design
+                    li.footer-list-item
+                        a(href="#") Business
+            .footer-links.footer-list 
+                .footer-list-header Quick Links
+                ul
+                    li.footer-list-item
+                        a(href="#") About
+                    li.footer-list-item
+                        a(href="#") Become Instructor
+                    li.footer-list-item
+                        a(href="#") Contact
+                    li.footer-list-item
+                        a(href="#") Career
+            .footer-support.footer-list 
+                .footer-list-header Support 
+                ul
+                    li.footer-list-item
+                        a(href="#") Help Center
+                    li.footer-list-item
+                        a(href="#") FAQs
+                    li.footer-list-item
+                        a(href="#") Terms &#38; Condition
+                    li.footer-list-item
+                        a(href="#") Privacy Policy
+            .footer-download.footer-list 
+                .footer-list-header Download our app 
+                ul
+                    li.footer-list-item
+                        a(href="#")
+                            img(srcSet="./images/download-appstore.png 2x", alt="")
+                    li.footer-list-item
+                        a(href="#")
+                            img(srcSet="./images/download-playstore.png 2x", alt="")
+        .footer-line
+        .footer-bottom
+            .footer-bottom-copyright
+                | © 2021 - Eduflex. Designed by 
+                span Templatecookie
+                | . All rights reserved
+            .footer-bottom-lang 
+                +dropdown("English")
+
+
+mixin dropdown(text="")
+    .dropdown 
+        p.dropdown-text= text
+        .dropdown-icon.icon
+            include ../icons/_icon-arrow-down
+
+
+mixin blurBtnPri(text= "", icon=false)
+    .button-blur-primary.button
+        span= text
+        if icon 
+            .btn-icon-arrow-right 
+                include ../icons/_icon-arrow-right
+
+mixin solidBtnPri(text="", icon=false)
+    .button-solid-primary.button
+        span= text
+        if icon 
+            .btn-icon-arrow-right 
+                include ../icons/_icon-arrow-right

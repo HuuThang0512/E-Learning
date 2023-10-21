@@ -1,0 +1,18 @@
+@use "../abstracts/" as abs;
+
+.toggle-checkbox {
+    display: inline-block;
+    width: 20px;
+    aspect-ratio: 1;
+    border: 1px solid abs.$gray2;
+    transition: all 0.1s linear;
+    font-size: 14px;
+    & + label a {
+        color: abs.$secondary2;
+        margin-left: 2px;
+    }
+    &.is-active {
+        background-color: abs.$primary-color;
+        border: none;
+    }
+}

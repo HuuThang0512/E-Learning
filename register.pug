@@ -1,0 +1,43 @@
+extends ./views/layout/_login
+append stylesheet
+  link(rel="stylesheet", href="./styles/login.css")
+block title
+  title Create Account
+
+
+block loginLeft 
+  img(srcSet="./images/register.png 2x", alt="")
+
+block topbar 
+  +topbarLogin("Already have account?", "Sign in", "sign_in.html")
+block form
+  h2.form-title Create your account 
+  .form-fill
+    .form-fill-item-double 
+      .block 
+        label(for="#first-name-fill") Full Name 
+        input(type="text" placeholder="First name...")#first-name-fill
+      .block
+        input(type="text" placeholder="Last name")#last-name-fill
+    .form-fill-item
+      label(for="username-fill") Username 
+      input(type="text" placeholder="Username...")#username-fill
+    .form-fill-item
+      label(for="email-fill") Email 
+      input(type="email" placeholder="Email address...")#email-fill
+    .form-fill-item-double 
+      .block 
+        label(for="#password-fill") Password
+        input(type="password" placeholder="Password")#password-fill
+      .block
+        label(for="#password-repeat-fill") Confirm Password
+        input(type="pasword" placeholder="Confirm Password")#password-repeat-fill
+    .form-fill-footer
+      .form-fill-footer-left 
+        .toggle-checkbox
+          include ./views/icons/_icon-check
+        label(for="agree") I Agree with all of your 
+          a(href="#") Terms &amp; Conditions 
+        input(type="checkbox")#agree
+      +solidBtnPri("Create Account", true)
+

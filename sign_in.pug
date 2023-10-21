@@ -1,0 +1,27 @@
+extends ./views/layout/_login
+append stylesheet
+    link(rel="stylesheet", href="./styles/login.css")
+block title
+  title Sign in
+
+
+block loginLeft 
+  img(srcSet="./images/login.png 2x", alt="")
+
+block form 
+  h2.form-title Sign in to your account
+  .form-fill 
+    .form-fill-item
+      label(for="email-fill") Email 
+      input(type="email" placeholder="Username or email address...")#email-fill
+    .form-fill-item
+      label(for="password-fill") Password
+      input(type="password" placeholder="Password")#password-fill
+    .form-fill-footer
+      .form-fill-footer-left 
+        .toggle-checkbox
+          include ./views/icons/_icon-check
+        label(for="remember") Remember me
+        input(type="checkbox")#remember
+      +solidBtnPri("Sign in", true)
+

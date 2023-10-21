@@ -1,0 +1,110 @@
+@use "../abstracts" as abs;
+
+.footer {
+  // position: absolute;
+  // bottom: 0;
+  margin-top: 240px;
+  width: 100%;
+  background-color: abs.$gray9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & > * {
+    width: 80%;
+  }
+  &-top {
+    // width: 80%;
+    padding-block: 80px;
+    gap: 40px;
+    display: flex;
+    align-items: start;
+  }
+  &-contact {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    flex: 2;
+    gap: 26px;
+    & [fill="#1D2026"] {
+      fill: #fff;
+    }
+    &-text {
+      color: abs.$gray5;
+      font-size: 14px;
+      text-wrap: wrap;
+    }
+    &-social {
+      display: flex;
+      gap: 12px;
+      & * {
+        fill: #fff;
+      }
+      & svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      &-item {
+        padding: 12px;
+        background-color: abs.$gray8;
+        color: #fff;
+        transition: all 0.15s linear;
+        cursor: pointer;
+        &:hover {
+          background-color: abs.$primary5;
+          box-shadow: 0px 6px 20px 0px rgba(204, 82, 43, 0.5);
+        }
+      }
+    }
+  }
+  &-download {
+    & ul {
+      margin-top: -12px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-list {
+    // padding-right: 20px;
+    &-header {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    &-item {
+      padding-block: 8px;
+      font-size: 14px;
+      & a {
+        color: abs.$gray5;
+        font-size: 14px;
+        transition: all 0.1s linear;
+      }
+      &:hover {
+        & a {
+          text-shadow: 0px 6px 20px 0px rgba(204, 82, 43, 0.5);
+          color: abs.$primary5;
+        }
+      }
+    }
+  }
+  &-line {
+    height: 1px;
+    width: 100%;
+    background-color: abs.$gray8;
+  }
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 24px;
+    &-copyright {
+      color: abs.$gray5;
+      font-size: 14px;
+      & span {
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+}

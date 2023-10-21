@@ -1,0 +1,18 @@
+.toggle-checkbox {
+  display: inline-block;
+  width: 20px;
+  aspect-ratio: 1;
+  border: 1px solid #CED1D9;
+  transition: all 0.1s linear;
+  font-size: 14px;
+}
+.toggle-checkbox + label a {
+  color: #564FFD;
+  margin-left: 2px;
+}
+.toggle-checkbox.is-active {
+  background-color: #FF6636;
+  border: none;
+}
+
+/*# sourceMappingURL=toggle-checkbox.css.map */

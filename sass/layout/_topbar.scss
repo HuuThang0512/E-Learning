@@ -1,0 +1,62 @@
+@use "../abstracts" as abs;
+
+.topbar {
+  &-home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    --padding: 20px;
+  }
+  &-left {
+    display: flex;
+    gap: 50px;
+    flex: 0 1 600px;
+  }
+  &-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    padding: 12px 20px;
+    background-color: abs.$search-bg;
+    border-radius: 12px;
+    cursor: pointer;
+    color: abs.$gray-sec-2;
+    &-input {
+      color: abs.$gray5;
+      flex: 1;
+      font-weight: 600;
+      @include abs.placeholder(abs.$gray-sec-2);
+    }
+  }
+  &-login-block {
+    display: flex;
+    gap: 12px;
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    &-direction {
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.37;
+      color: abs.$gray9;
+    }
+    &-home {
+      color: abs.$primary-color;
+    }
+    & .user-avatar {
+      display: none;
+      cursor: pointer;
+    }
+  }
+  &.is-login {
+    & .user-avatar{
+      display: block;
+    }
+    & .topbar-login-block {
+      display: none;
+    }
+  }
+}

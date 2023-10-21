@@ -1,0 +1,125 @@
+@use "../../abstracts" as abs;
+
+.best-course {
+  width: 90%;
+  margin: auto;
+  &-block {
+    padding-block: 80px;
+    background-color: abs.$gray50;
+  }
+  &-list {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(5, 1fr);
+    padding-block: 40px;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    gap: 12px;
+    overflow: hidden;
+    padding-bottom: 14px;
+  }
+  &-header,
+  &-footer,
+  &-desc {
+    padding-inline: 14px;
+  }
+  &-image {
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-type {
+    color: var(--color);
+    padding: 4px 6px;
+    position: relative;
+    font-size: 10px;
+    // text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.2;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: currentColor;
+      opacity: 0.1;
+    }
+  }
+  &-price {
+    &::before {
+      content: "$";
+    }
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: abs.$primary-color;
+    font-weight: 600;
+    line-height: 1.37;
+  }
+  &-desc {
+    color: abs.$gray9;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.42;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+  &-line {
+    width: 100%;
+    height: 1px;
+    background-color: abs.$gray1;
+  }
+  &-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    & span {
+      color: abs.$gray7;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.42;
+    }
+  }
+  &-count {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    & span {
+      color: abs.$gray7;
+      font-weight: 500;
+      line-height: 1.42;
+      font-size: 14px;
+      &::after {
+      content: "K";
+      line-height: 1.57;
+      font-weight: inherit;
+    }
+    }
+    & svg {
+      width: 16px;
+      aspect-ratio: 1;
+    }
+    
+  }
+}

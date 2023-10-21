@@ -1,0 +1,13 @@
+@use "../abstracts" as abs;
+.topbar {
+    --padding: 32px;
+    padding: 20px var(--padding);
+    border-bottom: 1px solid #E9EAF0;
+}
+
+.text-hover {
+    transition: all 0.1s linear;
+    &:hover {
+        color: abs.$primary-color;
+    }
+}

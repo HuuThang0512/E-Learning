@@ -1,0 +1,39 @@
+include ../mixins/_mixins
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    block title
+      title Document
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap", rel="stylesheet")
+    block stylesheet
+      link(rel="stylesheet", href="./styles/app.css")
+  body
+    .topbar 
+       block topbar 
+        +topbarLogin("Don\'t have account?", "Create Account", "register.html")
+        
+    .wrapper-login
+      .login-left
+        block loginLeft 
+      form.form
+        block form
+        .form-footer 
+          .form-signup-with
+          .form-signup-with-choices 
+            .form-signup-with-choice.form-signup-with-choice-google
+                .form-signup-with-choice-icon
+                  include ../icons/_icon-google
+                p Google
+            .form-signup-with-choice.form-signup-with-choice-facebook 
+                .form-signup-with-choice-icon
+                  include ../icons/_icon-facebook
+                p Facebook 
+            .form-signup-with-choice.form-signup-with-choice-apple
+                .form-signup-with-choice-icon
+                  include ../icons/_icon-apple
+                p Apple 

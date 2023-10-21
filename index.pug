@@ -1,0 +1,65 @@
+extends ./views/layout/_layout
+append stylesheet
+  link(rel="stylesheet", href="./styles/home.css")
+block title
+  title Home
+block main
+  .header 
+    .header-content 
+      h3.header-title Learn with expert anytime anywhere
+      p.header-desc Our mision is to help people to find the best course online and learn with expert anytime, anywhere.
+      a.header-register-btn(href="./register.html") 
+        +solidBtnPri("Create Account")
+    .header-image 
+      img.header-img(srcSet="./images/header-img.png 2x", alt="")
+
+  .category 
+    h3.category-header.heading-text Browse top category
+    .category-list
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+      +cateItem("./images/icons/cpu.png 2x", "Life Style", "2,736 Courses")
+    .category-footer 
+      p We have more category &amp; subcategory.
+      a(href="#") Browse All 
+
+  .best-course-block 
+    .best-course 
+      .best-course-heading.heading-text Best selling courses
+      .best-course-list 
+        +bestCourse("./images/course-img.png 2x", "Developments", "57", "The Complete 2021 Web Developments Bootcamp", "5.0", "265.7", "#342F98")
+        +bestCourse("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=2370&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "Developments", "57", "The Complete 2021 Web Developments Bootcamp", "5.0", "265.7", "#342F98")
+        +bestCourse("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=2372&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "Developments", "57", "The Complete 2021 Web Developments Bootcamp", "5.0", "265.7", "#342F98")
+        +bestCourse("https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&q=80&w=2370&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "Developments", "57", "The Complete 2021 Web Developments Bootcamp", "5.0", "265.7", "#342F98")
+        +bestCourse("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=2372&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "Developments", "57", "The Complete 2021 Web Developments Bootcamp", "5.0", "265.7", "#342F98")
+        +bestCourse("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=2372&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "Developments", "57", "The Complete 2021 Web Developments Bootcamp", "5.0", "265.7", "#342F98")
+        +bestCourse("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=2370&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "Developments", "57", "The Complete 2021 Web Developments Bootcamp", "5.0", "265.7", "#342F98")
+        +bestCourse("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=2372&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "Developments", "57", "The Complete 2021 Web Developments Bootcamp", "5.0", "265.7", "#342F98")
+        +bestCourse("./images/course-img.png 2x", "Developments", "57", "The Complete 2021 Web Developments Bootcamp", "5.0", "265.7", "#342F98")
+        +bestCourse("https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&q=80&w=2370&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "Developments", "57", "The Complete 2021 Web Developments Bootcamp", "5.0", "265.7", "#342F98")
+        
+
+  .feature
+    .feature-heading 
+      .heading-text.feature-heading-title Our feature courses
+      .feature-heading-desc Vestibulum sed dolor sed diam mollis maximus vel nec dolor. Donec varius purus et eleifend porta.
+    .feature-list
+      +featureItem("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=2370&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "Personal Development", "14.00", "26.00", "The Complete Foundation Stock Trading Course", "./images/user-avatar2.png 2x", "Kevin Gilbert", "5.0", "357,323", "267.7", "Beginner", "6 hours", "#FF6636")
+      +featureItem("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=2370&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "Personal Development", "14.00", "26.00", "The Complete Foundation Stock Trading Course", "./images/user-avatar2.png 2x", "Kevin Gilbert", "5.0", "357,323", "267.7", "Beginner", "6 hours", "#FF6636")
+      +featureItem("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=2370&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "Personal Development", "14.00", "26.00", "The Complete Foundation Stock Trading Course", "./images/user-avatar2.png 2x", "Kevin Gilbert", "5.0", "357,323", "267.7", "Beginner", "6 hours", "#FF6636")
+      +featureItem("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=2370&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "Personal Development", "14.00", "26.00", "The Complete Foundation Stock Trading Course", "./images/user-avatar2.png 2x", "Kevin Gilbert", "5.0", "357,323", "267.7", "Beginner", "6 hours", "#FF6636")
+      
+

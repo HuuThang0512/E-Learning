@@ -1,0 +1,20 @@
+@use "../abstracts" as abs;
+
+.dropdown {
+    color: abs.$gray5;
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    gap: 96px;
+    line-height: 1.5;
+    border: 1px solid abs.$gray8;
+    cursor: pointer;
+    & p {
+        color: abs.$gray5;
+        // font-size: 14px;
+    }
+    & path {
+        stroke: #fff;
+    }
+
+}

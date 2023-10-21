@@ -1,0 +1,174 @@
+@use "../abstracts/" as abs;
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-login {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.login {
+  &-left {
+    background-color: abs.$secondary1;
+    height: full;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.form {
+  // margin: auto;
+  padding: 0 136px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 40px;
+
+  &-title {
+    color: var(--gray-900, #1d2026);
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  &-fill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 18px;
+
+    &-item,
+    &-item-double {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      & input {
+        padding: 12px;
+        line-height: 1.5;
+        border: 1px solid abs.$border;
+        width: 100%;
+        color: abs.$gray5;
+      }
+      & label {
+        font-size: 14px;
+      }
+    }
+
+    &-item-double {
+      flex-direction: row;
+      gap: 18px;
+      & .block {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 6px;
+        justify-content: end;
+        & input {
+          align-self: flex-end;
+        }
+      }
+    }
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+
+      & input[type="checkbox"] {
+        display: none;
+      }
+      &-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 14px;
+        & label, a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  &-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  &-signup-with {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: abs.$gray1;
+        left: 0;
+        right: 0;
+    }
+
+    &::after {
+        position: absolute;
+        content: "SIGN UP WITH";
+        color: abs.$gray5;
+        font-size: 14px;
+        background-color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 8px;
+    }
+
+    &-choices {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        justify-content: space-between;
+    }
+    &-choice {
+        --border: #E9EAF0;
+        --border-width: 1px;
+        display: inline-flex;
+        align-items: center;
+        border: var(--border-width) solid var(--border);
+        flex: 1;
+        cursor: pointer;
+        transition: all 0.1s linear;
+        &-icon {
+            padding: 12px;
+            border-right: var(--border-width) solid var(--border);
+        }
+        & p {
+            flex: 1;
+            color: abs.$gray9;
+            font-size: 14px;
+            line-height: 1.57;
+            text-align: center;
+        }
+        &-google:hover {
+            --border: red;
+        }
+        &-facebook:hover {
+            --border: blue;
+        }
+        &-apple:hover {
+            --border: black;
+        }
+    }
+  }
+}
+
+.toggle-checkbox {
+    font-size: 14px;
+}

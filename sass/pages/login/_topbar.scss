@@ -1,0 +1,22 @@
+@use "../../abstracts/" as abs;
+
+.topbar {
+    --padding: 200px;
+    &-login {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    &-right-login {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+}
