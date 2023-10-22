@@ -349,11 +349,6 @@
 .feature-rating-count::after {
   content: ")";
 }
-.feature-line {
-  height: 1px;
-  width: 100%;
-  background-color: #E9EAF0;
-}
 .feature-footer {
   display: flex;
   align-items: center;
@@ -372,6 +367,67 @@
 }
 .feature-count-student span::after {
   content: "K";
+}
+
+.top-author {
+  padding: 80px;
+}
+.top-author-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  padding-block: 40px;
+}
+.top-author-item {
+  border: 1px solid #E9EAF0;
+}
+.top-author-content, .top-author-item-footer {
+  padding: 12px 16px;
+  align-items: center;
+  display: flex;
+}
+.top-author-content {
+  flex-direction: column;
+  gap: 4px;
+}
+.top-author-name {
+  color: var(--gray-900, #1d2026);
+  font-weight: 500;
+  line-height: 1.37;
+}
+.top-author-subject {
+  color: #8C94A3;
+  font-size: 14px;
+  line-height: 1.57;
+}
+.top-author-item-footer {
+  justify-content: space-between;
+}
+.top-author-item-footer > * {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.top-author-item-footer svg {
+  width: 16px;
+  aspect-ratio: 1;
+}
+.top-author-item-footer span {
+  font-size: 14px;
+  color: #4E5566;
+  font-weight: 500;
+  line-height: 1.42;
+}
+.top-author-footer {
+  text-align: center;
+  color: #6E7485;
+  font-size: 14px;
+}
+.top-author-footer a {
+  color: #FF6636;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.42;
 }
 
 body {
@@ -600,7 +656,7 @@ body {
 }
 
 .footer {
-  margin-top: 240px;
+  margin-top: 120px;
   width: 100%;
   background-color: #1D2026;
   display: flex;

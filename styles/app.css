@@ -10,6 +10,7 @@
   padding: 0;
   font: inherit;
   color: inherit;
+  scroll-behavior: smooth;
 }
 
 img,
@@ -106,6 +107,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 .text-hover:hover {
   color: #FF6636;
+}
+
+.line-full {
+  height: 1px;
+  width: 100%;
+  background-color: #E9EAF0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FF6636;
+  border-radius: 12px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #564FFD;
 }
 
 .button-blur-primary {
@@ -211,6 +226,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 .dropdown path {
   stroke: #fff;
+}
+
+.btn-to-top {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 100rem;
+  bottom: 100px;
+  right: 12px;
+  aspect-ratio: 1;
+  background-color: #ff5d00;
+  background-image: linear-gradient(62deg, #ff5d00 0%, #ff4e05 100%);
+}
+.btn-to-top svg {
+  width: 20px;
+  height: 20px;
 }
 
 body {
@@ -439,7 +472,7 @@ body {
 }
 
 .footer {
-  margin-top: 240px;
+  margin-top: 120px;
   width: 100%;
   background-color: #1D2026;
   display: flex;

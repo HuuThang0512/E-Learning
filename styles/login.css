@@ -9,7 +9,6 @@
 .topbar-left {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 50px;
 }
 .topbar-right-login {

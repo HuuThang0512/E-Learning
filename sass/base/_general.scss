@@ -11,3 +11,17 @@
         color: abs.$primary-color;
     }
 }
+
+.line-full {
+    height: 1px;
+    width: 100%;
+    background-color: abs.$border;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: abs.$primary5;
+    border-radius: 12px;
+    &:hover {
+        background-color: abs.$secondary2;
+    }
+}

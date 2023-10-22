@@ -1,0 +1,20 @@
+@use "../abstracts" as abs;
+
+.btn-to-top {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 100rem;
+  bottom: 100px;
+  right: 12px;
+  aspect-ratio: 1;
+  background-color: #ff5d00;
+  background-image: linear-gradient(62deg, #ff5d00 0%, #ff4e05 100%);
+
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
+}
