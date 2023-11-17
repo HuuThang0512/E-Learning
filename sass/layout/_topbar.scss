@@ -43,6 +43,9 @@
       line-height: 1.37;
       color: abs.$gray9;
     }
+    &-my-courses {
+      display: none;
+    }
     &-home {
       color: abs.$primary-color;
     }
@@ -52,11 +55,14 @@
     }
   }
   &.is-login {
-    & .user-avatar{
+    & .user-avatar {
       display: block;
     }
     & .topbar-login-block {
       display: none;
+    }
+    & .topbar-right-my-courses {
+      display: block;
     }
   }
 }

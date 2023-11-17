@@ -1,27 +1,79 @@
 @use "../abstracts" as abs;
 .topbar {
-    --padding: 32px;
-    padding: 20px var(--padding);
-    border-bottom: 1px solid #E9EAF0;
+  --padding: 32px;
+  padding: 20px var(--padding);
+  border-bottom: 1px solid #e9eaf0;
+}
+
+.wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.main {
+  margin-bottom: 500px;
 }
 
 .text-hover {
-    transition: all 0.1s linear;
-    &:hover {
-        color: abs.$primary-color;
-    }
+  transition: all 0.1s linear;
+  &:hover {
+    color: abs.$primary-color;
+  }
 }
 
 .line-full {
-    height: 1px;
-    width: 100%;
-    background-color: abs.$border;
+  height: 1px;
+  width: 100%;
+  background-color: abs.$border;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: abs.$primary5;
-    border-radius: 12px;
-    &:hover {
-        background-color: abs.$secondary2;
+  background-color: abs.$primary5;
+  border-radius: 12px;
+  &:hover {
+    background-color: abs.$secondary2;
+  }
+}
+
+.type {
+  color: var(--color);
+  padding: 4px 6px;
+  position: relative;
+  font-size: 10px;
+  display: inline-flex;
+  align-items: center;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: currentColor;
+    opacity: 0.1;
+  }
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  &-point {
+    color: abs.$gray9;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.42;
+  }
+  &-count {
+    color: abs.$gray5;
+    font-size: 14px;
+    &::before {
+      content: "(";
     }
+    &::after {
+      content: ")";
+    }
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
 }

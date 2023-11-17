@@ -1,0 +1,27 @@
+extends ./views/layout/_layout
+append stylesheet
+  link(rel="stylesheet", href="./styles/course.css")
+block title
+  title Home
+block main
+    .course-block 
+      .course-navbar  
+        .course-navbar-left 
+          .course-navbar-greet
+            p Have a good day 
+            h3 Courses
+        .course-navbar-right
+          +selective("Sort by", "Lastest", ["Oldest", "Newest", "Oldest", "Newest",]) 
+          +selective("Category", "All Category", ["Oldest", "Newest", "Oldest", "Newest",]) 
+          +selective("Rating", "4 Star & Up", ["Oldest", "Newest", "Oldest", "Newest",]) 
+      .course-list 
+        +courseItem("./images/course-html.png 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
+        +courseItem("../images/course-css.jpg 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
+        +courseItem("../images/course-js.png 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
+        +courseItem("../images/course-python.png 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
+        +courseItem("./images/course-html.png 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
+        +courseItem("../images/course-css.jpg 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
+        +courseItem("../images/course-js.png 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
+        +courseItem("../images/course-python.png 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
+
+    

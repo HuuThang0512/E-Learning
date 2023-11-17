@@ -641,6 +641,9 @@ body {
   line-height: 1.37;
   color: #1D2026;
 }
+.topbar-right-my-courses {
+  display: none;
+}
 .topbar-right-home {
   color: #FF6636;
 }
@@ -654,14 +657,18 @@ body {
 .topbar.is-login .topbar-login-block {
   display: none;
 }
+.topbar.is-login .topbar-right-my-courses {
+  display: block;
+}
 
 .footer {
-  margin-top: 120px;
-  width: 100%;
   background-color: #1D2026;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .footer > * {
   width: 80%;

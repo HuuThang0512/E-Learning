@@ -17,13 +17,15 @@ html(lang="en")
     .wrapper
       block topbar
         +topbarHome()
-      block main 
+      .main 
+        block main
       block footer 
         +footer()
       .button.btn-to-top 
         include ../icons/_icon-arrow-top
     
     script(src="./js/app.js") 
+
         
 
 

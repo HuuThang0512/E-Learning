@@ -1,0 +1,19 @@
+@use "../abstracts" as abs;
+
+.txt-hv-underline {
+    position: relative;
+    // display: block;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: abs.$primary-color;
+        transition: all 0.15s ease-in-out;
+    }
+    &:hover::after {
+        width: 100%;
+    }
+}

@@ -1,0 +1,14 @@
+@use "../../abstracts" as abs;
+
+.course {
+    &-block {
+        padding-inline: 120px;
+        // padding-block: 40px;
+        // background-color: red;
+    }
+    &-list {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

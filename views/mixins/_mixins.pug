@@ -11,7 +11,7 @@ mixin topbarLogin(text="", textBtn = "", linkBtn="#")
                     +blurBtnPri(textBtn)
 
 mixin topbarHome() 
-    .topbar 
+    .topbar
         .topbar-home
             .topbar-left 
                 a.topbar-logo(href="#") 
@@ -22,8 +22,9 @@ mixin topbarHome()
                         img(src="./images/icons/icon-search.svg", alt="")
                     input.topbar-search-input#topbar-search-input(type="text" placeholder="What do you want to learn...")
             .topbar-right
-                a.topbar-right-home.topbar-right-direction.click-item(href="#") Home 
-                a.topbar-right-courses.topbar-right-direction.click-item(href="#") Courses 
+                a.topbar-right-home.topbar-right-direction.txt-hv-underline(href="./index.html") Home 
+                a.topbar-right-courses.topbar-right-direction.txt-hv-underline(href="./courses.html") Courses 
+                a.topbar-right-my-courses.topbar-right-direction.click-item(href="./courses.html") My Courses 
                 a.topbar-right-cart.click-item(href="#") 
                     include ../icons/_icon-cart
                 .topbar-login-block
@@ -110,7 +111,42 @@ mixin topAuthor(img, name="", subject="", rating, count)
                 include ../icons/_icon-user
                 span= count
 
+mixin selective(label="", currentValue="", items)
+    .selective
+        .selective-label= label
+        .selective-section
+            p= currentValue 
+            include ../icons/_icon-arrow-down
+            ul.selective-items
+                each val in items 
+                    li.selective-item.click-item= val
+         
 
+mixin courseItem(img, type, name, rating, count, price)
+    .course-item
+        .course-image 
+            img.course-img(srcSet= img, alt="course-img")
+        .course-type-name 
+            p.course-type.type(style="--color: #342F98")= type
+            .course-name= name
+        .course-line
+        .course-rate-amount
+            .course-rating.rating 
+                include ../icons/_icon-star
+                span.course-rating-point.rating-point= rating
+            .course-count-student 
+                .course-count-icon.icon
+                    include ../icons/_icon-user
+                span.course-count-num= count
+        .course-line
+        .course-price-more 
+            .course-price= price
+            .course-more
+                include ../icons/_icon-more
+                ul.course-edit 
+                    li.course-edit-item View Details
+                    li.course-edit-item Edit Course
+                    li.course-edit-item Delete Course
 
 mixin footer()
     footer.footer

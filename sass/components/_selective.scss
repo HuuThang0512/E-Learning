@@ -1,0 +1,58 @@
+@use "../abstracts" as abs;
+
+.selective {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  &-label {
+    color: abs.$gray6;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33; /* 133.333% */
+  }
+  &-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    width: 160px;
+    background-color: abs.$search-bg;
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    & p {
+      color: abs.$gray7;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.5; /* 150% */
+    }
+  }
+  &-section.active &-items {
+    display: block;
+  }
+  &-items {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    width: 100%;
+    left: 0;
+    background-color: abs.$search-bg;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  &-item {
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.1s linear;
+    &:not(:last-child) {
+      border-bottom: 1px solid abs.$topbar-border;
+    }
+    &:hover {
+      color: abs.$primary-color;
+      transform: translateY(-1px);
+    }
+  }
+}
