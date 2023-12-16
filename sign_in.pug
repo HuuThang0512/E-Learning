@@ -17,11 +17,17 @@ block form
     .form-fill-item
       label(for="password-fill") Password
       input(type="password" placeholder="Password")#password-fill
+    .form-error 
+      p Account or password do not match
     .form-fill-footer
       .form-fill-footer-left 
         .toggle-checkbox
           include ./views/icons/_icon-check
         label(for="remember") Remember me
         input(type="checkbox")#remember
-      +solidBtnPri("Sign in", true)
+      .signin-btn 
+        +solidBtnPri("Sign in", true)
+append js 
+  script(src="./js/login.js" type="module") 
+  script(src="./js/app.js" type="module") 
 

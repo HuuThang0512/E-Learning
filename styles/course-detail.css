@@ -1,0 +1,224 @@
+.course-detail-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.course-detail-video iframe {
+  width: 100%;
+  min-height: 400px;
+  max-height: 440px;
+}
+.course-detail-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+  border-bottom: 1px solid #CED1D9;
+}
+.course-detail-navbar-item {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0;
+  transition: all 0.1s linear;
+}
+.course-detail-navbar-item:hover {
+  color: #FF6636;
+}
+.course-detail-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.course-detail-title {
+  color: #1D2026;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+.course-detail-desc-content {
+  color: #4E5566;
+  font-size: 14px;
+  line-height: 1.57;
+}
+.course-detail-commit {
+  padding: 40px;
+  background-color: rgba(225, 247, 227, 0.4);
+}
+.course-detail-commit-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  row-gap: 20px;
+}
+.course-detail-for-item, .course-detail-commit-item {
+  display: flex;
+  gap: 6px;
+  align-items: start;
+}
+.course-detail-for-item svg, .course-detail-commit-item svg {
+  flex-shrink: 0;
+}
+.course-detail-commit-item p {
+  color: #4E5566;
+  font-size: 14px;
+  line-height: 1.57;
+}
+.course-detail-for-item p {
+  line-height: 2;
+}
+.course-top-path {
+  margin-bottom: 16px;
+  color: #6E7485;
+  font-size: 14px;
+  line-height: 1.57;
+}
+.course-top-name {
+  color: #1D2026;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.course-top-desc {
+  color: #4E5566;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 24px;
+}
+
+@keyframes scroolHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+.course-detail-right {
+  flex: 1;
+  padding-inline: 24px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E9EAF0;
+  box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.06);
+}
+.course-detail-right > * {
+  flex: 1;
+  padding-block: 24px;
+  border-bottom: 1px solid #A1A5B3;
+}
+.course-detail-right > *:last-child {
+  border-bottom: 0;
+}
+.course-detail-right-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-detail-right-price span {
+  color: #1D2026;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.33;
+}
+.course-detail-right-price span::before {
+  content: "$";
+}
+.course-detail-right-infor {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.course-detail-right-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.course-detail-right-payment a > * {
+  flex: 1;
+  display: block;
+  text-align: center;
+}
+.course-detail-right-payment-note {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.42;
+  font-size: 14px;
+}
+.course-detail-right-payment-note p {
+  color: #8C94A3;
+  font-size: inherit;
+}
+.course-detail-right-payment-note span {
+  color: #6E7485;
+  font-size: inherit;
+  font-weight: 500;
+}
+.course-detail-right-item-title {
+  color: #1D2026;
+  font-weight: 500;
+  line-height: 1.37;
+  margin-bottom: 16px;
+}
+.course-detail-right-include-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.course-detail-right-include-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.course-detail-right-share-list {
+  display: flex;
+  gap: 8px;
+}
+.course-detail-right-share-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 16px;
+  color: #fff;
+  background-color: #F5F7FA;
+  transition: all 0.1s linear;
+}
+.course-detail-right-share-item:hover {
+  background-color: #E9EAF0;
+}
+.course-detail-right-share-item *[fill] {
+  fill: #4E5566;
+}
+.course-detail-infor-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-detail-infor-item-left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.course-detail-infor-item-left p {
+  color: #1D2026;
+  font-size: 14px;
+  line-height: 1.57;
+}
+.course-detail-infor-item-right {
+  color: #6E7485;
+  font-size: 14px;
+  line-height: 1.57;
+}
+
+.course-detail-wrapper {
+  padding: 80px 120px;
+  display: flex;
+  align-items: start;
+  gap: 24px;
+}
+
+/*# sourceMappingURL=course-detail.css.map */

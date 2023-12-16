@@ -1,0 +1,11 @@
+@use "../../abstracts" as abs;
+
+.form-error {
+    & p {
+        color: red; 
+        visibility: hidden;
+    }
+    &.active p {
+        visibility: visible;
+    }
+}

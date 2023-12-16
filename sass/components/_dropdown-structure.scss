@@ -1,0 +1,61 @@
+@use "../abstracts" as abs;
+
+.structure {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid abs.$gray2;
+  &-title {
+    padding-block: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    & p {
+      color: abs.$gray9;
+      line-height: 1.37;
+    }
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    height: 0;
+    // transition: all 0.15s linear;
+  }
+  &-chapter {
+    border-bottom: 1px solid abs.$gray2;
+    padding-inline: 20px;
+    overflow: hidden;
+    &.active {
+      & .structure-title p {
+        color: abs.$primary5;
+        font-weight: 500;
+      }
+      & .structure-list {
+        height: 100%;
+      }
+    }
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-block: 6px;
+    cursor: pointer;
+    & p {
+      transition: all 0.1s linear;
+    }
+    &:hover p {
+      color: abs.$primary-color;
+    }
+    &:last-child {
+      padding-bottom: 14px;
+    }
+    & p {
+      color: abs.$gray7;
+      font-size: 14px;
+      line-height: 1.57;
+    }
+  }
+}

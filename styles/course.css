@@ -36,6 +36,7 @@
   border-radius: 6px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .course-item > *:not(:first-child) {
   padding: 12px;
@@ -43,7 +44,8 @@
 .course-image {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
-  flex: 1;
+  flex: 0 0 180px;
+  max-height: 180px;
 }
 .course-image img {
   width: 100%;
@@ -59,6 +61,7 @@
   align-items: start;
 }
 .course-name {
+  flex: 1;
   color: #1D2026;
   font-weight: 500;
   line-height: 1.37;
@@ -70,6 +73,12 @@
   word-break: break-word;
   cursor: pointer;
   transition: all 0.1s linear;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
 .course-name:hover {
   color: #FF6636;
@@ -104,6 +113,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  justify-self: end;
 }
 .course-price {
   color: #FF6636;

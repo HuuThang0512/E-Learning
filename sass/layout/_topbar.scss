@@ -64,5 +64,10 @@
     & .topbar-right-my-courses {
       display: block;
     }
+    & .logout-btn {
+      display: block;
+    }
   }
 }
+
+.logout-btn {display: none;}

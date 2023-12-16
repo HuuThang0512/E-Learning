@@ -1,0 +1,176 @@
+@use "../../abstracts" as abs;
+
+.course {
+  &-detail {
+    &-content {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    &-video iframe {
+      width: 100%;
+      min-height: 400px;
+      max-height: 440px;
+    }
+    &-navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-inline: 20px;
+      border-bottom: 1px solid abs.$gray2;
+      &-item {
+        text-align: center;
+        padding: 20px;
+        padding-top: 0;
+        transition: all 0.1s linear;
+        &:hover {
+          color: abs.$primary-color;
+        }
+      }
+    }
+    &-overview {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    &-title {
+      color: abs.$gray9;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.33;
+      margin-bottom: 20px;
+    }
+    &-desc {
+      &-content {
+        color: abs.$gray7;
+        font-size: 14px;
+        line-height: 1.57;
+      }
+    }
+    &-commit {
+      padding: 40px;
+      background-color: rgba(225, 247, 227, 0.4);
+      &-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+        row-gap: 20px;
+      }
+    }
+    &-for,
+    &-commit {
+      &-item {
+        display: flex;
+        gap: 6px;
+        align-items: start;
+        & svg {
+          flex-shrink: 0;
+        }
+      }
+    }
+    &-commit-item {
+      & p {
+        color: abs.$gray7;
+        font-size: 14px;
+        line-height: 1.57;
+      }
+    }
+    &-for-item {
+      & p {
+        line-height: 2;
+      }
+    }
+
+    // &-structure {
+    //   display: flex;
+    //   flex-direction: column;
+    //   border: 1px solid abs.$gray2;
+    //   &-title {
+    //     padding-block: 20px;
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 8px;
+    //     cursor: pointer;
+    //     & p {
+    //       color: abs.$gray9;
+    //       line-height: 1.37;
+    //     }
+    //   }
+    //   &-list {
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 8px;
+    //     position: relative;
+    //     height: 0;
+    //     transition: all 0.15s linear;
+    //   }
+    //   &-chapter {
+    //     border-bottom: 1px solid abs.$gray2;
+    //     padding-inline: 20px;
+    //     overflow: hidden;
+    //     &:hover & .course-detail-structure-list {
+    //       height: 100%;
+    //     }
+    //     &.active {
+    //       & .course-detail-structure-title p {
+    //         color: abs.$primary5;
+    //         font-weight: 500;
+    //       }
+    //       & .course-detail-structure-list {
+    //         height: 100%;
+    //       }
+    //     }
+    //   }
+    //   &-item {
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 6px;
+    //     padding-block: 6px;
+    //     cursor: pointer;
+    //     & p {
+    //       transition: all 0.1s linear;
+    //     }
+    //     &:hover p {
+    //       color: abs.$primary-color;
+    //     }
+    //     &:last-child {
+    //       padding-bottom: 14px;
+    //     }
+    //     & p {
+    //       color: abs.$gray7;
+    //       font-size: 14px;
+    //       line-height: 1.57;
+    //     }
+    //   }
+    // }
+  }
+  &-top {
+    &-path {
+      margin-bottom: 16px;
+      color: abs.$gray6;
+      font-size: 14px;
+      line-height: 1.57;
+    }
+    &-name {
+      color: abs.$gray9;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+    &-desc {
+      color: abs.$gray7;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 24px;
+    }
+  }
+}
+
+@keyframes scroolHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}

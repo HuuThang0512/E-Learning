@@ -1,0 +1,64 @@
+@use "../../abstracts" as abs;
+
+.course-learn {
+  &-video {
+    & iframe {
+      width: 100%;
+      min-height: 400px;
+      max-height: 440px;
+    }
+  }
+  &-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &-name {
+      color: abs.$primary-color;
+      margin-block: -28px;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+    &-navbar {
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid abs.$gray4;
+
+      &-item {
+        transition: all 0.1s linear;
+        padding-inline: 12px;
+        &:hover {
+          color: abs.$primary-color;
+        }
+      }
+    }
+    &-para p {
+        color: abs.$gray7;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.57
+    }
+  }
+  &-attach {
+    &-main {
+        padding: 24px;
+        background-color: abs.$gray50;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        & span {
+            color: abs.$gray9;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.37;
+        }
+    }
+  }
+}

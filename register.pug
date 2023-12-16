@@ -31,13 +31,17 @@ block form
         input(type="password" placeholder="Password")#password-fill
       .block
         label(for="#password-repeat-fill") Confirm Password
-        input(type="pasword" placeholder="Confirm Password")#password-repeat-fill
+        input(type="password" placeholder="Confirm Password")#password-repeat-fill
+    .form-error
+     p Đăng kí không thành công
     .form-fill-footer
       .form-fill-footer-left 
-        .toggle-checkbox
-          include ./views/icons/_icon-check
+        +toggleCheckbox()
         label(for="agree") I Agree with all of your 
           a(href="#") Terms &amp; Conditions 
         input(type="checkbox")#agree
-      +solidBtnPri("Create Account", true)
-
+      .create-account-btn 
+        +solidBtnPri("Create Account", true)
+  script(type="module", src="./js/register.js") 
+append js 
+  script(src="./js/register.js" type="module") 

@@ -24,8 +24,8 @@ mixin topbarHome()
             .topbar-right
                 a.topbar-right-home.topbar-right-direction.txt-hv-underline(href="./index.html") Home 
                 a.topbar-right-courses.topbar-right-direction.txt-hv-underline(href="./courses.html") Courses 
-                a.topbar-right-my-courses.topbar-right-direction.click-item(href="./courses.html") My Courses 
-                a.topbar-right-cart.click-item(href="#") 
+                a.topbar-right-my-courses.topbar-right-direction.txt-hv-underline(href="./courses.html") My Courses 
+                a.topbar-right-cart.click-item(href="./cart.html") 
                     include ../icons/_icon-cart
                 .topbar-login-block
                     a.topbar-home-register(href="./register.html")
@@ -33,6 +33,8 @@ mixin topbarHome()
                     a.topbar-home-signin(href="sign_in.html")
                         +solidBtnPri("Sign in")
                 img.user-avatar.click-item(srcSet="./images/user-avatar.png 2x", alt="avatar")
+                .logout-btn 
+                    +solidBtnPri("Log out")
 
 mixin cateItem(img="", title="", count="") 
     .category-item.button
@@ -123,10 +125,10 @@ mixin selective(label="", currentValue="", items)
          
 
 mixin courseItem(img, type, name, rating, count, price)
-    .course-item
+    .course-item.click-item
         .course-image 
             img.course-img(srcSet= img, alt="course-img")
-        .course-type-name 
+        course-type-name 
             p.course-type.type(style="--color: #342F98")= type
             .course-name= name
         .course-line
@@ -147,6 +149,15 @@ mixin courseItem(img, type, name, rating, count, price)
                     li.course-edit-item View Details
                     li.course-edit-item Edit Course
                     li.course-edit-item Delete Course
+
+mixin cartCourse(img="", name="", price="")
+    tr.cart-course-item
+        td.cart-item-close 
+            include ../icons/_icon-close
+        td 
+            img(src="", alt="") 
+            span= name 
+        td= price
 
 mixin footer()
     footer.footer
@@ -217,6 +228,24 @@ mixin footer()
             .footer-bottom-lang 
                 +dropdown("English")
 
+mixin courseCommitItem(txt="")
+    .course-detail-commit-item 
+        include ../icons/_icon-check-circle
+        p= txt
+
+mixin courseForItem(txt)
+    .course-detail-for-item 
+        include ../icons/_icon-arrow-right-pri
+        p= txt
+
+mixin courseRequireItem(txt)
+    .course-detail-require-item 
+        include ../icons/_icon-check
+        p= txt
+
+mixin toggleCheckbox()
+    .toggle-checkbox 
+        include ../icons/_icon-check
 
 mixin dropdown(text="")
     .dropdown 

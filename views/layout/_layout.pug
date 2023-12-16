@@ -24,7 +24,11 @@ html(lang="en")
       .button.btn-to-top 
         include ../icons/_icon-arrow-top
     
-    script(src="./js/app.js") 
+    block js 
+      script(src="./js/data.js") 
+      script(src="./js/app.js" type="module") 
+
+
 
         
 

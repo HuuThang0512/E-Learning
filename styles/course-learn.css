@@ -1,0 +1,86 @@
+.course-learn-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #F5F7FA;
+  margin-bottom: 32px;
+}
+.course-learn-top-title {
+  color: #1D2026;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.33;
+}
+
+.course-learn-content {
+  padding-inline: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+.course-learn-title {
+  color: #1D2026;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+
+.course-learn-video iframe {
+  width: 100%;
+  min-height: 400px;
+  max-height: 440px;
+}
+.course-learn-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.course-learn-left-name {
+  color: #FF6636;
+  margin-block: -28px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.course-learn-left-navbar {
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #A1A5B3;
+}
+.course-learn-left-navbar-item {
+  transition: all 0.1s linear;
+  padding-inline: 12px;
+}
+.course-learn-left-navbar-item:hover {
+  color: #FF6636;
+}
+.course-learn-left-para p {
+  color: #4E5566;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.57;
+}
+.course-learn-attach-main {
+  padding: 24px;
+  background-color: #F5F7FA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-learn-attach-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.course-learn-attach-left span {
+  color: #1D2026;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.37;
+}
+
+/*# sourceMappingURL=course-learn.css.map */

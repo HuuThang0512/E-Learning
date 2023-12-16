@@ -1,0 +1,18 @@
+@use "../../abstracts" as abs;
+
+.course-learn {
+  &-content {
+    padding-inline: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+  }
+
+  &-title {
+    color: abs.$gray9;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.33;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,86 @@
+extends ./views/layout/_layout
+append stylesheet
+  link(rel="stylesheet", href="./styles/course-learn.css")
+block title
+  title Course Learn
+block main
+    .course-learn-wrapper 
+        .course-learn-top 
+            .course-learn-top-title HTML Basic Course: From Zero To Hero
+            .course-learn-top-right 
+                +blurBtnPri("Write A Review")
+                +solidBtnPri("Next Lecture")
+
+        .course-learn-content
+            .course-learn-left
+                .course-learn-video 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W-6OY9eI3hk?si=m4xWDrxW0xu2Aa0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                .course-learn-left-name 1. What's HTML
+                .course-learn-left-navbar 
+                    a(href="#desc").course-learn-left-navbar-item Description
+                    a(href="#content").course-learn-left-navbar-item Content
+                    a(href="#attach-files").course-learn-left-navbar-item Attach Files
+                    a(href="#attach-files").course-learn-left-navbar-item Comment
+                .course-learn-desc#desc
+                    .course-learn-desc-title.course-learn-title Lectures Description
+                    .course-learn-desc-content.course-learn-left-para
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, eos. Voluptatem nisi fuga sapiente sit, maiores quas hic officiis doloremque, reprehenderit minus voluptatum consequuntur minima fugiat? Mollitia autem praesentium ad?Voluptate impedit obcaecati nobis. Maiores optio corporis obcaecati laboriosam dignissimos eaque at ullam possimus ratione vero sapiente earum vitae animi tempore sed amet voluptatibus fugit illum ipsa, cupiditate explicabo esse.Fugit excepturi totam quisquam distinctio saepe consequuntur tempore laudantium maiores eveniet necessitatibus at optio repellat, dicta minima. Veniam ratione incidunt aliquid iusto autem saepe, eos, deleniti maxime neque nemo est.Alias at soluta eveniet eius veniam ratione itaque modi deserunt? Molestias totam enim saepe excepturi? Architecto culpa nisi impedit, at cum, quasi debitis delectus eius numquam a recusandae consequatur? Quo!
+                .course-learn-main-content#content
+                    .course-learn-main-content-title.course-learn-title Lecture Content
+                    .course-learn-main-content-text.course-learn-left-para
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta velit blanditiis numquam quaerat sapiente dolor, ab, qui facilis eius, ad cumque sunt iure tempora enim sit. Suscipit modi exercitationem beatae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, ullam voluptates odit officiis ipsa deleniti dolorum delectus, facere quo fugit tempore aut vero sit, eum nulla repellat qui odio! Sequi.Deserunt, cupiditate. Aspernatur ipsum cupiditate quaerat dolorum, repellendus, minima corrupti, veniam non magni reprehenderit nisi! Temporibus sint omnis, explicabo dicta maiores architecto adipisci consequuntur voluptatum vel in, laudantium ratione dolorum!Recusandae, incidunt aspernatur? Placeat ducimus similique eos tempora sequi voluptatibus pariatur amet veniam enim. Tempore repellendus fugit, ex veniam eaque eligendi, praesentium, reiciendis nobis maxime iste consequatur itaque molestias numquam. 
+                .course-learn-attach#attach-files
+                    .course-learn-attach-title.course-learn-title Attach Files
+                    .course-learn-attach-main 
+                        .course-learn-attach-left
+                            include ./views/icons/_icon-file
+                            span What's HTML
+                        a.course-learn-attach-btn
+                            +solidBtnPri("Open File")
+
+            .course-learn-right
+                .course-learn-right-title.course-learn-title Course Contents 
+                .course-learn-structure.structure
+                    .course-learn-structure-chapter.structure-chapter.active
+                        .course-learn-structure-title.structure-title
+                            include ./views/icons/_icon-arrow-down
+                            p Getting Started 
+                        ul.course-learn-structure-list.structure-list
+                            li.course-learn-structure-item.structure-item 
+                                include ./views/icons/_icon-notebook
+                                p What’s is HTML?
+                            li.course-learn-structure-item.structure-item 
+                                include ./views/icons/_icon-notebook
+                                p Get familiar with some common tags in HTML
+                            li.course-learn-structure-item.structure-item 
+                                include ./views/icons/_icon-notebook
+                                p What’s is HTML?
+                    .course-learn-structure-chapter.structure-chapter
+                        .course-learn-structure-title.structure-title
+                            include ./views/icons/_icon-arrow-down
+                            p Getting Started 
+                        ul.course-learn-structure-list.structure-list
+                            li.course-learn-structure-item.structure-item 
+                                include ./views/icons/_icon-notebook
+                                p What’s is HTML?
+                            li.course-learn-structure-item.structure-item 
+                                include ./views/icons/_icon-notebook
+                                p Get familiar with some common tags in HTML
+                            li.course-learn-structure-item.structure-item 
+                                include ./views/icons/_icon-notebook
+                                p What’s is HTML?
+                    .course-learn-structure-chapter.structure-chapter
+                        .course-learn-structure-title.structure-title
+                            include ./views/icons/_icon-arrow-down
+                            p Getting Started 
+                        ul.course-learn-structure-list.structure-list
+                            li.course-learn-structure-item.structure-item 
+                                include ./views/icons/_icon-notebook
+                                p What’s is HTML?
+                            li.course-learn-structure-item.structure-item 
+                                include ./views/icons/_icon-notebook
+                                p Get familiar with some common tags in HTML
+                            li.course-learn-structure-item.structure-item 
+                                include ./views/icons/_icon-notebook
+                                p What’s is HTML?
+              

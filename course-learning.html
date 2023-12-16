@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Learn</title>
+    <link rel="shortcut icon" href="./images/logo_hat.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="./styles/course-learn.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="topbar">
+        <div class="topbar-home">
+          <div class="topbar-left"> <a class="topbar-logo" href="#"> 
+              <svg width="154" height="40" viewBox="0 0 154 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.25 15L21 5L39.75 15L21 25L2.25 15Z" stroke="#FF6636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M30.375 37.5V20L21 15" stroke="#FF6636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M35.375 17.3333V25.8521C35.3755 26.1218 35.2884 26.3843 35.1266 26.6001C34.074 28.0008 29.6333 33.1249 21 33.1249C12.3667 33.1249 7.92597 28.0008 6.87336 26.6001C6.71165 26.3843 6.62449 26.1218 6.625 25.8521V17.3333" stroke="#FF6636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M51.2955 32V8.72727H66.4318V12.2614H55.5114V18.5795H65.6477V22.1136H55.5114V28.4659H66.5227V32H51.2955ZM80.1707 20.6136V24H69.6934V20.6136H80.1707ZM92.2533 14.5455V17.7273H82.2192V14.5455H92.2533ZM84.6965 10.3636H88.8101V26.75C88.8101 27.303 88.8934 27.7273 89.0601 28.0227C89.2344 28.3106 89.4616 28.5076 89.7419 28.6136C90.0222 28.7197 90.3328 28.7727 90.6738 28.7727C90.9313 28.7727 91.1662 28.7538 91.3783 28.7159C91.598 28.678 91.7647 28.6439 91.8783 28.6136L92.5715 31.8295C92.3518 31.9053 92.0374 31.9886 91.6283 32.0795C91.2268 32.1705 90.7344 32.2235 90.151 32.2386C89.1207 32.2689 88.1927 32.1136 87.3669 31.7727C86.5412 31.4242 85.8859 30.8864 85.401 30.1591C84.9238 29.4318 84.6889 28.5227 84.6965 27.4318V10.3636ZM105.859 24.6591V14.5455H109.972V32H105.984V28.8977H105.802C105.408 29.875 104.76 30.6742 103.859 31.2955C102.965 31.9167 101.862 32.2273 100.552 32.2273C99.4079 32.2273 98.3965 31.9735 97.5177 31.4659C96.6465 30.9508 95.9647 30.2045 95.4723 29.2273C94.9798 28.2424 94.7336 27.053 94.7336 25.6591V14.5455H98.8473V25.0227C98.8473 26.1288 99.1503 27.0076 99.7564 27.6591C100.362 28.3106 101.158 28.6364 102.143 28.6364C102.749 28.6364 103.336 28.4886 103.904 28.1932C104.472 27.8977 104.938 27.4583 105.302 26.875C105.673 26.2841 105.859 25.5455 105.859 24.6591ZM121.958 14.5455V17.7273H111.924V14.5455H121.958ZM114.401 10.3636H118.515V26.75C118.515 27.303 118.598 27.7273 118.765 28.0227C118.939 28.3106 119.167 28.5076 119.447 28.6136C119.727 28.7197 120.038 28.7727 120.379 28.7727C120.636 28.7727 120.871 28.7538 121.083 28.7159C121.303 28.678 121.47 28.6439 121.583 28.6136L122.276 31.8295C122.057 31.9053 121.742 31.9886 121.333 32.0795C120.932 32.1705 120.439 32.2235 119.856 32.2386C118.826 32.2689 117.898 32.1136 117.072 31.7727C116.246 31.4242 115.591 30.8864 115.106 30.1591C114.629 29.4318 114.394 28.5227 114.401 27.4318V10.3636ZM131.865 32.3409C130.16 32.3409 128.683 31.9659 127.433 31.2159C126.183 30.4659 125.213 29.4167 124.524 28.0682C123.842 26.7197 123.501 25.1439 123.501 23.3409C123.501 21.5379 123.842 19.9583 124.524 18.6023C125.213 17.2462 126.183 16.1932 127.433 15.4432C128.683 14.6932 130.16 14.3182 131.865 14.3182C133.569 14.3182 135.047 14.6932 136.297 15.4432C137.547 16.1932 138.512 17.2462 139.194 18.6023C139.884 19.9583 140.228 21.5379 140.228 23.3409C140.228 25.1439 139.884 26.7197 139.194 28.0682C138.512 29.4167 137.547 30.4659 136.297 31.2159C135.047 31.9659 133.569 32.3409 131.865 32.3409ZM131.887 29.0455C132.812 29.0455 133.584 28.7917 134.206 28.2841C134.827 27.7689 135.289 27.0795 135.592 26.2159C135.903 25.3523 136.058 24.3902 136.058 23.3295C136.058 22.2614 135.903 21.2955 135.592 20.4318C135.289 19.5606 134.827 18.8674 134.206 18.3523C133.584 17.8371 132.812 17.5795 131.887 17.5795C130.941 17.5795 130.153 17.8371 129.524 18.3523C128.903 18.8674 128.437 19.5606 128.126 20.4318C127.823 21.2955 127.672 22.2614 127.672 23.3295C127.672 24.3902 127.823 25.3523 128.126 26.2159C128.437 27.0795 128.903 27.7689 129.524 28.2841C130.153 28.7917 130.941 29.0455 131.887 29.0455ZM142.76 32V14.5455H146.749V17.4545H146.93C147.249 16.447 147.794 15.6705 148.567 15.125C149.347 14.572 150.237 14.2955 151.237 14.2955C151.464 14.2955 151.718 14.3068 151.999 14.3295C152.286 14.3447 152.525 14.3712 152.714 14.4091V18.1932C152.54 18.1326 152.264 18.0795 151.885 18.0341C151.514 17.9811 151.154 17.9545 150.805 17.9545C150.055 17.9545 149.381 18.1174 148.783 18.4432C148.192 18.7614 147.726 19.2045 147.385 19.7727C147.044 20.3409 146.874 20.9962 146.874 21.7386V32H142.76Z" fill="#1D2026"></path>
+              </svg></a>
+            <div class="topbar-search"> 
+              <label class="topbar-search-icon" for="topbar-search-input"><img src="./images/icons/icon-search.svg" alt=""/></label>
+              <input class="topbar-search-input" id="topbar-search-input" type="text" placeholder="What do you want to learn..."/>
+            </div>
+          </div>
+          <div class="topbar-right"><a class="topbar-right-home topbar-right-direction txt-hv-underline" href="./index.html">Home </a><a class="topbar-right-courses topbar-right-direction txt-hv-underline" href="./courses.html">Courses </a><a class="topbar-right-my-courses topbar-right-direction txt-hv-underline" href="./courses.html">My Courses </a><a class="topbar-right-cart click-item" href="./cart.html"> 
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path>
+              </svg></a>
+            <div class="topbar-login-block"><a class="topbar-home-register" href="./register.html">
+                <div class="button-blur-primary button"><span>Create Account</span>
+                </div></a><a class="topbar-home-signin" href="sign_in.html">
+                <div class="button-solid-primary button"><span>Sign in</span>
+                </div></a></div><img class="user-avatar click-item" srcSet="./images/user-avatar.png 2x" alt="avatar"/>
+            <div class="logout-btn"> 
+              <div class="button-solid-primary button"><span>Log out</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main"> 
+        <div class="course-learn-wrapper"> 
+          <div class="course-learn-top"> 
+            <div class="course-learn-top-title">HTML Basic Course: From Zero To Hero</div>
+            <div class="course-learn-top-right"> 
+              <div class="button-blur-primary button"><span>Write A Review</span>
+              </div>
+              <div class="button-solid-primary button"><span>Next Lecture</span>
+              </div>
+            </div>
+          </div>
+          <div class="course-learn-content">
+            <div class="course-learn-left">
+              <div class="course-learn-video">
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/W-6OY9eI3hk?si=m4xWDrxW0xu2Aa0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="course-learn-left-name">1. What's HTML</div>
+              <div class="course-learn-left-navbar"> <a class="course-learn-left-navbar-item" href="#desc">Description</a><a class="course-learn-left-navbar-item" href="#content">Content</a><a class="course-learn-left-navbar-item" href="#attach-files">Attach Files</a><a class="course-learn-left-navbar-item" href="#attach-files">Comment</a></div>
+              <div class="course-learn-desc" id="desc">
+                <div class="course-learn-desc-title course-learn-title">Lectures Description</div>
+                <div class="course-learn-desc-content course-learn-left-para">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, eos. Voluptatem nisi fuga sapiente sit, maiores quas hic officiis doloremque, reprehenderit minus voluptatum consequuntur minima fugiat? Mollitia autem praesentium ad?Voluptate impedit obcaecati nobis. Maiores optio corporis obcaecati laboriosam dignissimos eaque at ullam possimus ratione vero sapiente earum vitae animi tempore sed amet voluptatibus fugit illum ipsa, cupiditate explicabo esse.Fugit excepturi totam quisquam distinctio saepe consequuntur tempore laudantium maiores eveniet necessitatibus at optio repellat, dicta minima. Veniam ratione incidunt aliquid iusto autem saepe, eos, deleniti maxime neque nemo est.Alias at soluta eveniet eius veniam ratione itaque modi deserunt? Molestias totam enim saepe excepturi? Architecto culpa nisi impedit, at cum, quasi debitis delectus eius numquam a recusandae consequatur? Quo!</p>
+                </div>
+              </div>
+              <div class="course-learn-main-content" id="content">
+                <div class="course-learn-main-content-title course-learn-title">Lecture Content</div>
+                <div class="course-learn-main-content-text course-learn-left-para">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta velit blanditiis numquam quaerat sapiente dolor, ab, qui facilis eius, ad cumque sunt iure tempora enim sit. Suscipit modi exercitationem beatae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, ullam voluptates odit officiis ipsa deleniti dolorum delectus, facere quo fugit tempore aut vero sit, eum nulla repellat qui odio! Sequi.Deserunt, cupiditate. Aspernatur ipsum cupiditate quaerat dolorum, repellendus, minima corrupti, veniam non magni reprehenderit nisi! Temporibus sint omnis, explicabo dicta maiores architecto adipisci consequuntur voluptatum vel in, laudantium ratione dolorum!Recusandae, incidunt aspernatur? Placeat ducimus similique eos tempora sequi voluptatibus pariatur amet veniam enim. Tempore repellendus fugit, ex veniam eaque eligendi, praesentium, reiciendis nobis maxime iste consequatur itaque molestias numquam. </p>
+                </div>
+              </div>
+              <div class="course-learn-attach" id="attach-files">
+                <div class="course-learn-attach-title course-learn-title">Attach Files</div>
+                <div class="course-learn-attach-main"> 
+                  <div class="course-learn-attach-left">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M37.4995 42H10.498C10.1002 42 9.71869 41.842 9.43739 41.5607C9.15608 41.2794 8.99805 40.8978 8.99805 40.5V7.5C8.99805 7.10218 9.15608 6.72064 9.43739 6.43934C9.71869 6.15804 10.1002 6 10.498 6H28.4995L38.9995 16.5V40.5C38.9995 40.697 38.9607 40.892 38.8853 41.074C38.81 41.256 38.6995 41.4214 38.5602 41.5607C38.4209 41.7 38.2555 41.8104 38.0735 41.8858C37.8915 41.9612 37.6965 42 37.4995 42Z" stroke="#FF6636" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M28.5 6V16.5H39.0015" stroke="#FF6636" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 25.5H30" stroke="#FF6636" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18 31.5H30" stroke="#FF6636" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg><span>What's HTML</span>
+                  </div><a class="course-learn-attach-btn">
+                    <div class="button-solid-primary button"><span>Open File</span>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="course-learn-right">
+              <div class="course-learn-right-title course-learn-title">Course Contents </div>
+              <div class="course-learn-structure structure">
+                <div class="course-learn-structure-chapter structure-chapter active">
+                  <div class="course-learn-structure-title structure-title">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6L8 11L3 6" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <p>Getting Started </p>
+                  </div>
+                  <ul class="course-learn-structure-list structure-list">
+                    <li class="course-learn-structure-item structure-item"> 
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 7.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.5 10.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M16.5 0.75H1.5C1.08579 0.75 0.75 1.08579 0.75 1.5V16.5C0.75 16.9142 1.08579 17.25 1.5 17.25H16.5C16.9142 17.25 17.25 16.9142 17.25 16.5V1.5C17.25 1.08579 16.9142 0.75 16.5 0.75Z" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4.5 0.75V17.25" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <p>What’s is HTML?</p>
+                    </li>
+                    <li class="course-learn-structure-item structure-item"> 
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 7.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.5 10.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M16.5 0.75H1.5C1.08579 0.75 0.75 1.08579 0.75 1.5V16.5C0.75 16.9142 1.08579 17.25 1.5 17.25H16.5C16.9142 17.25 17.25 16.9142 17.25 16.5V1.5C17.25 1.08579 16.9142 0.75 16.5 0.75Z" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4.5 0.75V17.25" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <p>Get familiar with some common tags in HTML</p>
+                    </li>
+                    <li class="course-learn-structure-item structure-item"> 
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 7.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.5 10.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M16.5 0.75H1.5C1.08579 0.75 0.75 1.08579 0.75 1.5V16.5C0.75 16.9142 1.08579 17.25 1.5 17.25H16.5C16.9142 17.25 17.25 16.9142 17.25 16.5V1.5C17.25 1.08579 16.9142 0.75 16.5 0.75Z" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4.5 0.75V17.25" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <p>What’s is HTML?</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="course-learn-structure-chapter structure-chapter">
+                  <div class="course-learn-structure-title structure-title">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6L8 11L3 6" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <p>Getting Started </p>
+                  </div>
+                  <ul class="course-learn-structure-list structure-list">
+                    <li class="course-learn-structure-item structure-item"> 
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 7.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.5 10.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M16.5 0.75H1.5C1.08579 0.75 0.75 1.08579 0.75 1.5V16.5C0.75 16.9142 1.08579 17.25 1.5 17.25H16.5C16.9142 17.25 17.25 16.9142 17.25 16.5V1.5C17.25 1.08579 16.9142 0.75 16.5 0.75Z" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4.5 0.75V17.25" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <p>What’s is HTML?</p>
+                    </li>
+                    <li class="course-learn-structure-item structure-item"> 
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 7.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.5 10.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M16.5 0.75H1.5C1.08579 0.75 0.75 1.08579 0.75 1.5V16.5C0.75 16.9142 1.08579 17.25 1.5 17.25H16.5C16.9142 17.25 17.25 16.9142 17.25 16.5V1.5C17.25 1.08579 16.9142 0.75 16.5 0.75Z" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4.5 0.75V17.25" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <p>Get familiar with some common tags in HTML</p>
+                    </li>
+                    <li class="course-learn-structure-item structure-item"> 
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 7.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.5 10.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M16.5 0.75H1.5C1.08579 0.75 0.75 1.08579 0.75 1.5V16.5C0.75 16.9142 1.08579 17.25 1.5 17.25H16.5C16.9142 17.25 17.25 16.9142 17.25 16.5V1.5C17.25 1.08579 16.9142 0.75 16.5 0.75Z" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4.5 0.75V17.25" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <p>What’s is HTML?</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="course-learn-structure-chapter structure-chapter">
+                  <div class="course-learn-structure-title structure-title">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6L8 11L3 6" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <p>Getting Started </p>
+                  </div>
+                  <ul class="course-learn-structure-list structure-list">
+                    <li class="course-learn-structure-item structure-item"> 
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 7.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.5 10.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M16.5 0.75H1.5C1.08579 0.75 0.75 1.08579 0.75 1.5V16.5C0.75 16.9142 1.08579 17.25 1.5 17.25H16.5C16.9142 17.25 17.25 16.9142 17.25 16.5V1.5C17.25 1.08579 16.9142 0.75 16.5 0.75Z" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4.5 0.75V17.25" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <p>What’s is HTML?</p>
+                    </li>
+                    <li class="course-learn-structure-item structure-item"> 
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 7.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.5 10.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M16.5 0.75H1.5C1.08579 0.75 0.75 1.08579 0.75 1.5V16.5C0.75 16.9142 1.08579 17.25 1.5 17.25H16.5C16.9142 17.25 17.25 16.9142 17.25 16.5V1.5C17.25 1.08579 16.9142 0.75 16.5 0.75Z" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4.5 0.75V17.25" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <p>Get familiar with some common tags in HTML</p>
+                    </li>
+                    <li class="course-learn-structure-item structure-item"> 
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 7.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.5 10.5H13.5" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M16.5 0.75H1.5C1.08579 0.75 0.75 1.08579 0.75 1.5V16.5C0.75 16.9142 1.08579 17.25 1.5 17.25H16.5C16.9142 17.25 17.25 16.9142 17.25 16.5V1.5C17.25 1.08579 16.9142 0.75 16.5 0.75Z" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4.5 0.75V17.25" stroke="#A1A5B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <p>What’s is HTML?</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-top"> 
+          <div class="footer-contact"> <a class="footer-contact-logo" href="#">
+              <svg width="154" height="40" viewBox="0 0 154 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.25 15L21 5L39.75 15L21 25L2.25 15Z" stroke="#FF6636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M30.375 37.5V20L21 15" stroke="#FF6636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M35.375 17.3333V25.8521C35.3755 26.1218 35.2884 26.3843 35.1266 26.6001C34.074 28.0008 29.6333 33.1249 21 33.1249C12.3667 33.1249 7.92597 28.0008 6.87336 26.6001C6.71165 26.3843 6.62449 26.1218 6.625 25.8521V17.3333" stroke="#FF6636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M51.2955 32V8.72727H66.4318V12.2614H55.5114V18.5795H65.6477V22.1136H55.5114V28.4659H66.5227V32H51.2955ZM80.1707 20.6136V24H69.6934V20.6136H80.1707ZM92.2533 14.5455V17.7273H82.2192V14.5455H92.2533ZM84.6965 10.3636H88.8101V26.75C88.8101 27.303 88.8934 27.7273 89.0601 28.0227C89.2344 28.3106 89.4616 28.5076 89.7419 28.6136C90.0222 28.7197 90.3328 28.7727 90.6738 28.7727C90.9313 28.7727 91.1662 28.7538 91.3783 28.7159C91.598 28.678 91.7647 28.6439 91.8783 28.6136L92.5715 31.8295C92.3518 31.9053 92.0374 31.9886 91.6283 32.0795C91.2268 32.1705 90.7344 32.2235 90.151 32.2386C89.1207 32.2689 88.1927 32.1136 87.3669 31.7727C86.5412 31.4242 85.8859 30.8864 85.401 30.1591C84.9238 29.4318 84.6889 28.5227 84.6965 27.4318V10.3636ZM105.859 24.6591V14.5455H109.972V32H105.984V28.8977H105.802C105.408 29.875 104.76 30.6742 103.859 31.2955C102.965 31.9167 101.862 32.2273 100.552 32.2273C99.4079 32.2273 98.3965 31.9735 97.5177 31.4659C96.6465 30.9508 95.9647 30.2045 95.4723 29.2273C94.9798 28.2424 94.7336 27.053 94.7336 25.6591V14.5455H98.8473V25.0227C98.8473 26.1288 99.1503 27.0076 99.7564 27.6591C100.362 28.3106 101.158 28.6364 102.143 28.6364C102.749 28.6364 103.336 28.4886 103.904 28.1932C104.472 27.8977 104.938 27.4583 105.302 26.875C105.673 26.2841 105.859 25.5455 105.859 24.6591ZM121.958 14.5455V17.7273H111.924V14.5455H121.958ZM114.401 10.3636H118.515V26.75C118.515 27.303 118.598 27.7273 118.765 28.0227C118.939 28.3106 119.167 28.5076 119.447 28.6136C119.727 28.7197 120.038 28.7727 120.379 28.7727C120.636 28.7727 120.871 28.7538 121.083 28.7159C121.303 28.678 121.47 28.6439 121.583 28.6136L122.276 31.8295C122.057 31.9053 121.742 31.9886 121.333 32.0795C120.932 32.1705 120.439 32.2235 119.856 32.2386C118.826 32.2689 117.898 32.1136 117.072 31.7727C116.246 31.4242 115.591 30.8864 115.106 30.1591C114.629 29.4318 114.394 28.5227 114.401 27.4318V10.3636ZM131.865 32.3409C130.16 32.3409 128.683 31.9659 127.433 31.2159C126.183 30.4659 125.213 29.4167 124.524 28.0682C123.842 26.7197 123.501 25.1439 123.501 23.3409C123.501 21.5379 123.842 19.9583 124.524 18.6023C125.213 17.2462 126.183 16.1932 127.433 15.4432C128.683 14.6932 130.16 14.3182 131.865 14.3182C133.569 14.3182 135.047 14.6932 136.297 15.4432C137.547 16.1932 138.512 17.2462 139.194 18.6023C139.884 19.9583 140.228 21.5379 140.228 23.3409C140.228 25.1439 139.884 26.7197 139.194 28.0682C138.512 29.4167 137.547 30.4659 136.297 31.2159C135.047 31.9659 133.569 32.3409 131.865 32.3409ZM131.887 29.0455C132.812 29.0455 133.584 28.7917 134.206 28.2841C134.827 27.7689 135.289 27.0795 135.592 26.2159C135.903 25.3523 136.058 24.3902 136.058 23.3295C136.058 22.2614 135.903 21.2955 135.592 20.4318C135.289 19.5606 134.827 18.8674 134.206 18.3523C133.584 17.8371 132.812 17.5795 131.887 17.5795C130.941 17.5795 130.153 17.8371 129.524 18.3523C128.903 18.8674 128.437 19.5606 128.126 20.4318C127.823 21.2955 127.672 22.2614 127.672 23.3295C127.672 24.3902 127.823 25.3523 128.126 26.2159C128.437 27.0795 128.903 27.7689 129.524 28.2841C130.153 28.7917 130.941 29.0455 131.887 29.0455ZM142.76 32V14.5455H146.749V17.4545H146.93C147.249 16.447 147.794 15.6705 148.567 15.125C149.347 14.572 150.237 14.2955 151.237 14.2955C151.464 14.2955 151.718 14.3068 151.999 14.3295C152.286 14.3447 152.525 14.3712 152.714 14.4091V18.1932C152.54 18.1326 152.264 18.0795 151.885 18.0341C151.514 17.9811 151.154 17.9545 150.805 17.9545C150.055 17.9545 149.381 18.1174 148.783 18.4432C148.192 18.7614 147.726 19.2045 147.385 19.7727C147.044 20.3409 146.874 20.9962 146.874 21.7386V32H142.76Z" fill="#1D2026"></path>
+              </svg></a>
+            <div class="footer-contact-text">Aliquam rhoncus ligula est, non pulvinar elitconvallis nec. Donec mattis odio at.</div>
+            <div class="footer-contact-social"><a class="footer-contact-social-item" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.25 6.875V4.375C11.25 3.685 11.81 3.125 12.5 3.125H13.75V0H11.25C9.17875 0 7.5 1.67875 7.5 3.75V6.875H5V10H7.5V20H11.25V10H13.75L15 6.875H11.25Z" fill="#4267B2"></path>
+                </svg></a><a class="footer-contact-social-item" href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.9507 5.29205C17.9086 4.33564 17.7539 3.67812 17.5324 3.10836C17.3038 2.50359 16.9522 1.96213 16.4915 1.51201C16.0414 1.05489 15.4963 0.699691 14.8986 0.474702C14.3255 0.253147 13.6714 0.0984842 12.715 0.0563159C11.7515 0.0105764 11.4456 0 9.00174 0C6.55791 0 6.25202 0.0105764 5.29204 0.0527447C4.33563 0.0949129 3.67811 0.249713 3.1085 0.471131C2.50358 0.699691 1.96213 1.05132 1.51201 1.51201C1.05489 1.96213 0.699827 2.50716 0.474701 3.10493C0.253147 3.67812 0.098484 4.33207 0.0563158 5.28848C0.0105764 6.25203 0 6.55792 0 9.00176C0 11.4456 0.0105764 11.7515 0.0527446 12.7115C0.0949128 13.6679 0.249713 14.3254 0.471267 14.8952C0.699827 15.4999 1.05489 16.0414 1.51201 16.4915C1.96213 16.9486 2.50715 17.3038 3.10493 17.5288C3.67811 17.7504 4.33206 17.905 5.28861 17.9472C6.24845 17.9895 6.55448 17.9999 8.99831 17.9999C11.4421 17.9999 11.748 17.9895 12.708 17.9472C13.6644 17.905 14.3219 17.7504 14.8916 17.5288C16.1012 17.0611 17.0577 16.1047 17.5254 14.8952C17.7468 14.322 17.9016 13.6679 17.9437 12.7115C17.9859 11.7515 17.9965 11.4456 17.9965 9.00176C17.9965 6.55792 17.9929 6.25203 17.9507 5.29205ZM16.3298 12.6411C16.2911 13.5202 16.1434 13.9949 16.0203 14.3114C15.7179 15.0956 15.0955 15.7179 14.3114 16.0204C13.9949 16.1434 13.5168 16.2911 12.6411 16.3297C11.6917 16.372 11.407 16.3824 9.00531 16.3824C6.60365 16.3824 6.31534 16.372 5.36937 16.3297C4.4903 16.2911 4.01559 16.1434 3.69913 16.0204C3.3089 15.8761 2.9537 15.6476 2.66539 15.3487C2.3665 15.0568 2.13794 14.7052 1.99372 14.315C1.87065 13.9985 1.72299 13.5202 1.68439 12.6447C1.64209 11.6953 1.63165 11.4104 1.63165 9.00876C1.63165 6.60709 1.64209 6.31878 1.68439 5.37295C1.72299 4.49387 1.87065 4.01917 1.99372 3.7027C2.13794 3.31234 2.3665 2.95727 2.66896 2.66883C2.9607 2.36994 3.31233 2.14138 3.7027 1.99729C4.01917 1.87422 4.49744 1.72656 5.37294 1.68783C6.32235 1.64566 6.60722 1.63508 9.00875 1.63508C11.414 1.63508 11.6987 1.64566 12.6447 1.68783C13.5238 1.72656 13.9985 1.87422 14.3149 1.99729C14.7052 2.14138 15.0604 2.36994 15.3487 2.66883C15.6476 2.96071 15.8761 3.31234 16.0203 3.7027C16.1434 4.01917 16.2911 4.49731 16.3298 5.37295C16.372 6.32236 16.3826 6.60709 16.3826 9.00876C16.3826 11.4104 16.372 11.6917 16.3298 12.6411Z" fill="white"></path>
+                  <path d="M9.00188 4.37744C6.44912 4.37744 4.37793 6.44849 4.37793 9.00139C4.37793 11.5543 6.44912 13.6253 9.00188 13.6253C11.5548 13.6253 13.6258 11.5543 13.6258 9.00139C13.6258 6.44849 11.5548 4.37744 9.00188 4.37744ZM9.00188 12.0008C7.34578 12.0008 6.00244 10.6576 6.00244 9.00139C6.00244 7.34515 7.34578 6.00195 9.00188 6.00195C10.6581 6.00195 12.0013 7.34515 12.0013 9.00139C12.0013 10.6576 10.6581 12.0008 9.00188 12.0008Z" fill="white"></path>
+                  <path d="M14.8876 4.19521C14.8876 4.79133 14.4043 5.27469 13.808 5.27469C13.2119 5.27469 12.7285 4.79133 12.7285 4.19521C12.7285 3.59894 13.2119 3.11572 13.808 3.11572C14.4043 3.11572 14.8876 3.59894 14.8876 4.19521Z" fill="white"></path>
+                </svg></a><a class="footer-contact-social-item" href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.9921 18.0002V17.9994H17.9966V11.3979C17.9966 8.16841 17.3013 5.68066 13.5258 5.68066C11.7108 5.68066 10.4928 6.67666 9.99554 7.62091H9.94304V5.98216H6.36328V17.9994H10.0908V12.0489C10.0908 10.4822 10.3878 8.96716 12.328 8.96716C14.2398 8.96716 14.2683 10.7552 14.2683 12.1494V18.0002H17.9921Z" fill="white"></path>
+                  <path d="M0.293457 5.98291H4.02546V18.0002H0.293457V5.98291Z" fill="white"></path>
+                  <path d="M2.15808 0C0.964832 0 -0.00341797 0.96825 -0.00341797 2.1615C-0.00341797 3.35475 0.964832 4.34325 2.15808 4.34325C3.35133 4.34325 4.31958 3.35475 4.31958 2.1615C4.31883 0.96825 3.35058 0 2.15808 0V0Z" fill="white"></path>
+                </svg></a><a class="footer-contact-social-item" href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_103_2813)">
+                    <path d="M17.9966 3.73137C17.3272 4.025 16.614 4.21962 15.8703 4.31412C16.6353 3.85737 17.2192 3.13962 17.4937 2.2745C16.7805 2.69975 15.993 3.00013 15.1537 3.16775C14.4765 2.44663 13.5112 2 12.4582 2C10.4152 2 8.77046 3.65825 8.77046 5.69113C8.77046 5.98363 8.79521 6.26487 8.85596 6.53262C5.78808 6.383 3.07346 4.91263 1.24983 2.67275C0.931457 3.22513 0.744707 3.85738 0.744707 4.538C0.744707 5.816 1.40283 6.94887 2.38383 7.60475C1.79096 7.5935 1.20933 7.42138 0.716582 7.15025C0.716582 7.1615 0.716582 7.17613 0.716582 7.19075C0.716582 8.984 1.99571 10.4735 3.67308 10.8166C3.37271 10.8988 3.04533 10.9381 2.70558 10.9381C2.46933 10.9381 2.23083 10.9246 2.00696 10.8751C2.48508 12.3365 3.84183 13.4109 5.45508 13.4457C4.19958 14.4279 2.60546 15.0196 0.879707 15.0196C0.577082 15.0196 0.286832 15.0061 -0.00341797 14.969C1.63121 16.0231 3.56846 16.625 5.65758 16.625C12.4481 16.625 16.1606 11 16.1606 6.12425C16.1606 5.96112 16.155 5.80363 16.1471 5.64725C16.8795 5.1275 17.4948 4.47837 17.9966 3.73137Z" fill="white"></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_103_2813">
+                      <rect width="18" height="18" fill="white" transform="translate(-0.00341797)"></rect>
+                    </clipPath>
+                  </defs>
+                </svg></a><a class="footer-contact-social-item" href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0393 3.38548C16.8103 3.59312 17.4182 4.20094 17.6257 4.97204C18.0113 6.38048 17.9965 9.31629 17.9965 9.31629C17.9965 9.31629 17.9965 12.2371 17.6259 13.6457C17.4182 14.4167 16.8104 15.0246 16.0393 15.2321C14.6307 15.6029 8.99654 15.6029 8.99654 15.6029C8.99654 15.6029 3.37706 15.6029 1.95379 15.2174C1.18269 15.0098 0.574872 14.4018 0.367232 13.6309C-0.00341797 12.2371 -0.00341797 9.30146 -0.00341797 9.30146C-0.00341797 9.30146 -0.00341797 6.38048 0.367232 4.97204C0.574735 4.20108 1.19752 3.57829 1.95365 3.37079C3.36223 3 8.99641 3 8.99641 3C8.99641 3 14.6307 3 16.0393 3.38548ZM11.8879 9.30154L7.20264 12.0001V6.60303L11.8879 9.30154Z" fill="white"></path>
+                </svg></a></div>
+          </div>
+          <div class="footer-category footer-list"> 
+            <div class="footer-list-header">Top 4 Category</div>
+            <ul>
+              <li class="footer-list-item"><a href="#">Development</a></li>
+              <li class="footer-list-item"><a href="#">Finance &#38; Accounting</a></li>
+              <li class="footer-list-item"><a href="#">Design</a></li>
+              <li class="footer-list-item"><a href="#">Business</a></li>
+            </ul>
+          </div>
+          <div class="footer-links footer-list"> 
+            <div class="footer-list-header">Quick Links</div>
+            <ul>
+              <li class="footer-list-item"><a href="#">About</a></li>
+              <li class="footer-list-item"><a href="#">Become Instructor</a></li>
+              <li class="footer-list-item"><a href="#">Contact</a></li>
+              <li class="footer-list-item"><a href="#">Career</a></li>
+            </ul>
+          </div>
+          <div class="footer-support footer-list"> 
+            <div class="footer-list-header">Support </div>
+            <ul>
+              <li class="footer-list-item"><a href="#">Help Center</a></li>
+              <li class="footer-list-item"><a href="#">FAQs</a></li>
+              <li class="footer-list-item"><a href="#">Terms &#38; Condition</a></li>
+              <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-download footer-list"> 
+            <div class="footer-list-header">Download our app </div>
+            <ul>
+              <li class="footer-list-item"><a href="#"><img srcSet="./images/download-appstore.png 2x" alt=""/></a></li>
+              <li class="footer-list-item"><a href="#"><img srcSet="./images/download-playstore.png 2x" alt=""/></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-copyright">© 2021 - Eduflex. Designed by <span>Templatecookie</span>. All rights reserved</div>
+          <div class="footer-bottom-lang"> 
+            <div class="dropdown"> 
+              <p class="dropdown-text">English</p>
+              <div class="dropdown-icon icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6L8 11L3 6" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="button btn-to-top"> 
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"></path>
+        </svg>
+      </div>
+    </div>
+    <script src="./js/data.js"> </script>
+    <script src="./js/app.js" type="module"> </script>
+  </body>
+</html>

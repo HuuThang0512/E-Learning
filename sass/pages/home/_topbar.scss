@@ -58,5 +58,12 @@
     & .topbar-login-block {
       display: none;
     }
+    & .logout-btn {
+      display: block;
+    }
   }
+}
+
+.logout-btn {
+  display: none;
 }

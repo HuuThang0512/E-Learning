@@ -430,6 +430,75 @@
   line-height: 1.42;
 }
 
+.topbar-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  --padding: 20px;
+}
+.topbar-left {
+  display: flex;
+  gap: 50px;
+  flex: 0 1 600px;
+}
+.topbar-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  padding: 12px 20px;
+  background-color: #F0F3F6;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #ABA7B2;
+}
+.topbar-search-input {
+  color: #8C94A3;
+  flex: 1;
+  font-weight: 600;
+}
+.topbar-search-input::-webkit-input-placeholder {
+  color: #ABA7B2;
+}
+.topbar-search-input::-moz-input-placeholder {
+  color: #ABA7B2;
+}
+.topbar-login-block {
+  display: flex;
+  gap: 12px;
+}
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.topbar-right-direction {
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.37;
+  color: #1D2026;
+}
+.topbar-right-home {
+  color: #FF6636;
+}
+.topbar-right .user-avatar {
+  display: none;
+  cursor: pointer;
+}
+.topbar.is-login .user-avatar {
+  display: block;
+}
+.topbar.is-login .topbar-login-block {
+  display: none;
+}
+.topbar.is-login .logout-btn {
+  display: block;
+}
+
+.logout-btn {
+  display: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -659,6 +728,13 @@ body {
 }
 .topbar.is-login .topbar-right-my-courses {
   display: block;
+}
+.topbar.is-login .logout-btn {
+  display: block;
+}
+
+.logout-btn {
+  display: none;
 }
 
 .footer {

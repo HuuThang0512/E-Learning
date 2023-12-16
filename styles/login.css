@@ -17,4 +17,12 @@
   align-items: center;
 }
 
+.form-error p {
+  color: red;
+  visibility: hidden;
+}
+.form-error.active p {
+  visibility: visible;
+}
+
 /*# sourceMappingURL=login.css.map */

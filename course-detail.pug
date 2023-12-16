@@ -1,0 +1,183 @@
+extends ./views/layout/_layout
+append stylesheet
+  link(rel="stylesheet", href="./styles/course-detail.css")
+block title
+  title Course Detail
+block main
+    .course-detail-wrapper 
+      .course-detail-content
+        .course-detail-top 
+          .course-top-path Home &#62; Course &#62; Detail
+          .course-top-name HTML Basic Course: From Zero To Hero
+          .course-top-desc Master all the basic to advanced knowledge of HTML to be able to create a basic website
+        .course-detail-video
+          iframe(width="560", height="315", src="https://www.youtube.com/embed/xKuJrmlCdig?si=TQfCKpHzRLixogdo", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen)
+        .course-detail-navbar 
+          a.course-detail-navbar-item(href="#overview") Overview
+          a.course-detail-navbar-item(href="#curriculum") Curriculum
+          a.course-detail-navbar-item(href="#curriculum") Instructor
+          a.course-detail-navbar-item(href="#curriculum") Review
+        .course-detail-overview#overview
+          .course-detail-desc
+            .course-detail-desc-title.course-detail-title Description 
+            .course-detail-desc-content Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet itaque dolores, ex libero nemo modi, distinctio optio debitis facere assumenda obcaecati laboriosam! Voluptates minima officiis illum corporis similique omnis.Soluta dignissimos accusamus et cupiditate repellendus, natus asperiores, earum aspernatur molestiae dicta sapiente esse minus magnam! Repellat, molestias corrupti, inventore expedita soluta repudiandae iusto non accusantium ducimus doloribus, aliquid illo.Tempore saepe ipsum quidem ea distinctio eius reprehenderit dolores corrupti quod, ab veniam officia in autem aliquam, soluta ullam quo iure? Molestias, consequatur? Dolorum mollitia, error sed itaque cumque eum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sunt, asperiores perspiciatis nihil id earum eum. Iusto ipsa et sint suscipit, vel nostrum, magni architecto repellat velit nam omnis est.Veritatis iusto ea, fugit dolore saepe adipisci nobis incidunt nulla asperiores, voluptate alias non tenetur placeat tempora architecto, sapiente assumenda. Veritatis non ipsum iusto alias eos ipsa illum a eaque.Laborum, repudiandae blanditiis. Fugiat, in. Labore sunt repudiandae id autem, numquam iure ratione maxime ullam adipisci voluptates nisi corrupti quia temporibus dolorum vel architecto non vero veritatis aperiam! Sed, voluptatem?
+          .course-detail-commit 
+            .course-detail-commit-title.course-detail-title What you will learn in this course
+            .course-detail-commit-list 
+              +courseCommitItem("You will learn how to design beautiful websites using Figma, an interface design tool used by designers at Uber, Airbnb and Microsoft.")
+              +courseCommitItem("You will learn how to take your designs and build them into powerful websites using Webflow, a state of the art site builder used by teams at Dell, NASA and more.")
+              +courseCommitItem("You will learn secret tips of Freelance Web Designers and how they make great money freelancing online.")
+              +courseCommitItem("Learn to use Python professionally, learning both Python 2 and Python 3!")
+              +courseCommitItem("Understand how to use both the Jupyter Notebook and create .py files")
+              +courseCommitItem("Get an understanding of how to create GUIs in the Jupyter Notebook system!")
+          .course-detail-for
+            .course-detail-for-title.course-detail-title Who this course is for:
+            .course-detail-for-list 
+              +courseForItem("This course is for those who want to launch a Freelance Web Design career.")
+              +courseForItem("Praesent eget consequat elit. Duis a pretium purus.")
+              +courseForItem("Sed sagittis suscipit condimentum pellentesque vulputate feugiat libero nec accumsan.")
+              +courseForItem("Sed nec dapibus orci integer nisl turpis, eleifend sit amet aliquam vel, lacinia quis ex.")
+              +courseForItem("Those who are looking to reboot their work life and try a new profession that is fun, rewarding and highly in-demand.")
+              +courseForItem("Nunc auctor consequat lorem, in posuere enim hendrerit sed.")
+              +courseForItem("Duis ornare enim ullamcorper congue consectetur suspendisse interdum tristique est sed molestie.")
+          .course-detail-requirement 
+            .course-detail-requirement-title.course-detail-title Course requirements
+              +courseForItem("Nunc auctor consequat lorem, in posuere enim hendrerit sed.")
+              +courseForItem("Sed sagittis suscipit condimentum pellentesque vulputate feugiat libero nec accumsan.")
+              +courseForItem("Duis ornare enim ullamcorper congue consectetur suspendisse interdum tristique est sed molestie.")
+              +courseForItem("Those who are looking to reboot their work life and try a new profession that is fun, rewarding and highly in-demand.")
+              +courseForItem("Praesent eget consequat elit. Duis a pretium purus.")
+              +courseForItem("Sed nec dapibus orci integer nisl turpis, eleifend sit amet aliquam vel, lacinia quis ex.")
+              +courseForItem("This course is for those who want to launch a Freelance Web Design career.")
+          
+          .course-detail-curriculum#curriculum 
+            .course-detail-curriculum-title.course-detail-title Curriculum
+            .course-detail-structure.structure
+              .course-detail-structure-chapter.structure-chapter.active
+                .course-learn-structure-title.structure-title
+                    include ./views/icons/_icon-arrow-down
+                    p Getting Started 
+                ul.course-detail-structure-list.structure-list
+                    li.course-detail-structure-item.structure-item 
+                        include ./views/icons/_icon-notebook
+                        p What’s is HTML?
+                    li.course-detail-structure-item.structure-item 
+                        include ./views/icons/_icon-notebook
+                        p Get familiar with some common tags in HTML
+                    li.course-detail-structure-item.structure-item 
+                        include ./views/icons/_icon-notebook
+                        p What’s is HTML?
+              .course-detail-structure-chapter.structure-chapter
+                .course-detail-structure-title.structure-title
+                    include ./views/icons/_icon-arrow-down
+                    p Getting Started 
+                ul.course-detail-structure-list.structure-list
+                    li.course-detail-structure-item.structure-item 
+                        include ./views/icons/_icon-notebook
+                        p What’s is HTML?
+                    li.course-detail-structure-item.structure-item 
+                        include ./views/icons/_icon-notebook
+                        p Get familiar with some common tags in HTML
+                    li.course-detail-structure-item.structure-item 
+                        include ./views/icons/_icon-notebook
+                        p What’s is HTML?
+              .course-detail-structure-chapter.structure-chapter
+                .course-detail-structure-title.structure-title
+                    include ./views/icons/_icon-arrow-down
+                    p Getting Started 
+                ul.course-detail-structure-list.structure-list
+                    li.course-detail-structure-item.structure-item 
+                        include ./views/icons/_icon-notebook
+                        p What’s is HTML?
+                    li.course-detail-structure-item.structure-item 
+                        include ./views/icons/_icon-notebook
+                        p Get familiar with some common tags in HTML
+                    li.course-detail-structure-item.structure-item 
+                        include ./views/icons/_icon-notebook
+                        p What’s is HTML?
+                  
+
+      .course-detail-right
+        .course-detail-right-price 
+          p Price: 
+          span 14.00
+        .course-detail-right-infor 
+          .course-detail-infor-item 
+            .course-detail-infor-item-left 
+              include ./views/icons/_icon-clock
+              p Course Duration
+            .course-detail-infor-item-right 6 Month 
+          .course-detail-infor-item 
+            .course-detail-infor-item-left 
+              include ./views/icons/_icon-level
+              p Course Level
+            .course-detail-infor-item-right Beginner and Intermediate 
+          .course-detail-infor-item 
+            .course-detail-infor-item-left 
+              include ./views/icons/_icon-user
+              p Students Enrolled
+            .course-detail-infor-item-right 69,419,618 
+          .course-detail-infor-item 
+            .course-detail-infor-item-left 
+              include ./views/icons/_icon-notepad
+              p Language
+            .course-detail-infor-item-right English
+          .course-detail-infor-item 
+            .course-detail-infor-item-left 
+              include ./views/icons/_icon-notepad
+              p Subtittle Language
+            .course-detail-infor-item-right Vietnamese 
+        .course-detail-right-payment 
+          a(href="./cart.html")
+            +solidBtnPri("Add to cart") 
+          a(href="./checkout.html") 
+            +blurBtnPri("Buy now")
+          .course-detail-right-payment-note 
+            span Note: 
+            p all course have 30-days money-back guarantee
+        .course-detail-right-include 
+          .course-detail-right-include-title.course-detail-right-item-title This course includes:
+          .course-detail-right-include-list
+            .course-detail-right-include-item
+              include ./views/icons/_icon-clock-pri
+              p Lifetime access
+            .course-detail-right-include-item
+              include ./views/icons/_icon-dollar
+              p 30-days money-back guarantee
+            .course-detail-right-include-item
+              include ./views/icons/_icon-notebook-pri
+              p Free exercises file &amp; downloadable resources
+            .course-detail-right-include-item
+              include ./views/icons/_icon-trophy
+              p Shareable certificate of completion
+            .course-detail-right-include-item
+              include ./views/icons/_icon-monitor
+              p Access on mobile , tablet and TV
+            .course-detail-right-include-item
+              include ./views/icons/_icon-notepad-pri
+              p English subtitles
+            .course-detail-right-include-item
+              include ./views/icons/_icon-stack
+              p 100% online course
+        .course-detail-right-share 
+          .course-detail-right-share-title.course-detail-right-item-title Share this course:
+          .course-detail-right-share-list 
+            .course-detail-right-share-item
+              include ./views/icons/_icon-copy
+              p Copy link
+            .course-detail-right-share-item
+              include ./views/icons/_icon-facebook
+            .course-detail-right-share-item
+              include ./views/icons/_icon-twister
+            .course-detail-right-share-item
+              include ./views/icons/_icon-instagram
+            .course-detail-right-share-item
+              include ./views/icons/_icon-whatapps
+
+
+        
+          
+             
+
+
+        

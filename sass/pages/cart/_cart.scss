@@ -1,0 +1,12 @@
+@use "../../abstracts" as abs;
+
+.cart-wrapper {
+    
+}
+
+.cart-main {
+    padding: 80px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

@@ -1,0 +1,96 @@
+extends ./views/layout/_layout
+append stylesheet
+  link(rel="stylesheet", href="./styles/checkout.css")
+block title
+  title Checkout
+block main
+    .checkout-wrapper 
+        .checkout-top 
+            .checkout-top-title Checkout
+            .checkout-top-path Home / Shopping Cart / Checkout
+        .checkout-main 
+            .checkout-content
+                .checkout-content-left
+                    .checkout-main-heading Checkout
+                    .checkout-infor-block 
+                        .checkout-infor-title.checkout-title Recipient's Information
+                        .checkout-infor-name-block.checkout-input-block
+                            label Your Name 
+                            input.checkout-input(type="text" placeholder="Full name")
+                        .checkout-infor-mail-block.checkout-input-block
+                            label Your Email 
+                            input.checkout-input(type="email" placeholder="Email address")
+                        .checkout-infor-name-block.checkout-input-block
+                            label Note 
+                            textarea.checkout-txt-area(placeholder="Add your personal message here... ", rows="6")
+                    .checkout-payment-block
+                        .checkout-payment-title.checkout-title Payment Method
+                        .checkout-payment-selections 
+                            .checkout-payment-visa.checkout-payment-item
+                                .checkout-visa-icon.checkout-payment-icon 
+                                    include ./views/icons/_icon-visa
+                                .checkout-payment-id 4855************
+                                .checkout-payment-date 04/24
+                                .checkout-payment-name Huu Thang
+                                .checkout.checkout-payment-icon-check 
+                                    include ./views/icons/_icon-check-circle
+                            .checkout-payment-mastercard.checkout-payment-item.active
+                                .checkout-mastercard-icon.checkout-payment-icon 
+                                    include ./views/icons/_icon-mastercard
+                                .checkout-payment-id 4855************
+                                .checkout-payment-date 04/24
+                                .checkout-payment-name Huu Thang
+                                .checkout.checkout-payment-icon-check 
+                                    include ./views/icons/_icon-check-circle
+                            .checkout-payment-paypal.checkout-payment-item
+                                .checkout-paypal-icon.checkout-payment-icon 
+                                    include ./views/icons/_icon-paypal
+                                .checkout-payment-id 4855************
+                                .checkout-payment-date 04/24
+                                .checkout-payment-name Huu Thang
+                                .checkout.checkout-payment-icon-check 
+                                    include ./views/icons/_icon-check-circle
+                            .checkout-payment-credit.checkout-payment-item
+                                .checkout-credit-icon.checkout-payment-icon 
+                                    include ./views/icons/_icon-credit
+                                .checkout-payment-id 4855************
+                                .checkout-payment-date 04/24
+                                .checkout-payment-name Huu Thang
+                                .checkout.checkout-payment-icon-check 
+                                    include ./views/icons/_icon-check-circle
+                        .checkout-payment-infor
+                            .checkout-payment-infor-name.checkout-input-block
+                                label Name
+                                input.checkout-input(type="text" placeholder="Name on card")
+                            .checkout-payment-infor-number.checkout-input-block
+                                label Card Number 
+                                input.checkout-input(type="text" placeholder="Card Number")
+                            .checkout-payment-double 
+                                .checkout-payment-infor-dat.checkout-input-block
+                                    label MM / YY 
+                                    input.checkout-input(type="text" placeholder="MM / YY")
+                                .checkout-payment-infor-cvc.checkout-input-block
+                                    label CVC
+                                    input.checkout-input(type="text" placeholder="Security Code")
+                        .checkout-payment-footer 
+                            +toggleCheckbox()
+                            label(for="remember-card") Remember this card, save it on my card list
+                            input(type="checkbox")#remember-card 
+                            
+                .checkout-content-right
+                    .checkout-order-summary 
+                        .checkout-order-title.checkout-title Order Summary 
+                        .checkout-order-subtotal.checkout-order-item
+                            p Initial price 
+                            span 61.97
+                        .checkout-order-discount.checkout-order-item
+                            p Coupon Discount
+                            span 8
+                    .checkout-complete-payment 
+                        .checkout-complete-total 
+                            p Total: 
+                            span 75
+                        a.checkout-payment-btn(href="#")
+                            +solidBtnPri("Compelete Payment")
+
+        

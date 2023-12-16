@@ -1,0 +1,90 @@
+@use "../../abstracts" as abs;
+
+.checkout {
+    &-content {
+        &-left {
+            display: flex;
+            gap: 40px;
+            flex-direction: column;
+            flex: 1.5;
+        }
+    }
+    &-input, 
+    &-txt-area {
+        padding: 12px 16px;
+        border: 1px solid abs.$border;
+    }
+
+    &-infor {
+        &-block {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &-payment {
+        &-block {
+            display: flex;
+            gap: 24px;
+            flex-direction: column;
+        }
+
+        &-selections {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &-item {
+            padding: 12px 24px;
+            border: 1px solid abs.$border;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            cursor: pointer;
+            transition: all 0.1s linear;
+            & > * {
+                color: abs.$gray7;
+                font-size: 14px;
+                line-height: 1.57;
+            }
+        }
+
+        &-icon-check {
+            visibility: hidden;
+        }
+
+        &-item.active {
+            border: 1px solid abs.$success5;
+            & > .checkout-payment-icon-check {
+                visibility: visible;
+            }
+        }
+
+        &-item:hover {
+            border: 1px solid abs.$gray5;
+        }
+
+        &-infor {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &-double {
+            display: flex;
+            gap: 16px;
+            & .checkout-input-block {
+
+            }
+        }
+
+        &-footer {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+extends ./views/layout/_layout
+append stylesheet
+  link(rel="stylesheet", href="./styles/cart.css")
+block title
+  title Cart
+block main
+    .cart-wrapper 
+        .cart-top 
+            .cart-top-title Shoping Cart 
+            .cart-top-path Home / Shopping Cart
+        .cart-main 
+            .cart-main-heading
+                | Shopping Cart 
+                span 3
+            .cart-content
+                .cart-content-left
+                    table.cart-course-list
+                        thead 
+                            tr 
+                                th 
+                                th Course
+                                th Price
+                        tbody 
+                            +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
+                            +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
+                            +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
+                            +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
+                            +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
+                .cart-content-right
+                    .cart-checkout 
+                        .cart-checkout-total 
+                            p Total: 
+                            span 75 
+                        a.cart-checkout-btn(href="./checkout.html")
+                            +solidBtnPri("Proceed to checkout", true)
+                    .cart-coupon 
+                        .cart-coupon-label Apply Coupon Code 
+                        .cart-coupon-input
+                            input(type="text" placeholder="Coupon Code")
+                            .cart-coupon-btn Apply
