@@ -117,6 +117,7 @@
 }
 .cart-checkout-total span::after {
   content: "USD";
+  margin-left: 4px;
 }
 .cart-checkout-btn {
   align-self: center;

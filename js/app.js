@@ -31,6 +31,7 @@ if (logoutBtn) {
   logoutBtn.addEventListener("click", () => {
     localStorage.setItem("adminCheck", "false");
     localStorage.setItem("signed", "false");
+    localStorage.removeItem("userId");
     topbar.classList.remove("is-login");
     window.location.reload();
   });

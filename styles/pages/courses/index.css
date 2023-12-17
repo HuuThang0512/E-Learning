@@ -7,6 +7,11 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.add-course-btn {
+  margin-bottom: 20px;
+  display: none;
+}
+
 .course-navbar {
   display: flex;
   align-items: center;
@@ -149,6 +154,81 @@
 }
 .course-edit-item:hover {
   color: #FF6636;
+}
+
+.course-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  opacity: 0;
+  height: 0%;
+  transition: opacity 0.15s linear;
+}
+.course-popup.active {
+  height: 100%;
+  opacity: 1;
+}
+.course-popup.active .popup-content {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.popup-content {
+  position: absolute;
+  display: none;
+  gap: 24px;
+  padding: 60px 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 6px;
+  width: 50%;
+  height: fit-content;
+  justify-content: center;
+  overflow-y: auto;
+  z-index: 100;
+}
+.popup-content label {
+  font-weight: 500;
+}
+.popup-content input {
+  border: 1px solid #A1A5B3;
+  padding: 12px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.popup-content-edit-block, .popup-content-add-block {
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.popup-content-edit-block.popup-btn .button, .popup-content-add-block.popup-btn .button {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+.popup-content-edit-block:not(:first-child), .popup-content-add-block:not(:first-child) {
+  margin-top: 24px;
+}
+
+.popup-error-text {
+  color: red;
+  font-weight: 500;
+  text-align: center;
+  visibility: hidden;
+}
+.popup-error-text.active {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=index.css.map */

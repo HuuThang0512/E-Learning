@@ -2,6 +2,7 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 let userAccounts = JSON.parse(localStorage.getItem("accounts"));
+let userAmount = userAccounts.length;
 const createBtn = $(".create-account-btn");
 const formErrorTxt = $(".form-error");
 
@@ -20,9 +21,11 @@ function addAccount() {
     userAccounts.filter((account) => account.username == usernameFill)
   ) {
     let newAccount = {
+      id: `${++userAmount}`,
       username: usernameFill,
       password: passwordFill,
       admin: false,
+      cartCourse: new Set(),
     };
     console.log(newAccount);
     userAccounts.push(newAccount);

@@ -28,7 +28,7 @@
               <input class="topbar-search-input" id="topbar-search-input" type="text" placeholder="What do you want to learn..."/>
             </div>
           </div>
-          <div class="topbar-right"><a class="topbar-right-home topbar-right-direction txt-hv-underline" href="./index.html">Home </a><a class="topbar-right-courses topbar-right-direction txt-hv-underline" href="./courses.html">Courses </a><a class="topbar-right-my-courses topbar-right-direction txt-hv-underline" href="./courses.html">My Courses </a><a class="topbar-right-cart click-item" href="./cart.html"> 
+          <div class="topbar-right"><a class="topbar-right-home topbar-right-direction txt-hv-underline" href="./index.html">Home </a><a class="topbar-right-courses topbar-right-direction txt-hv-underline" href="./courses.html">Courses </a><a class="topbar-right-my-courses topbar-right-direction txt-hv-underline" href="./my-courses.html">My Courses </a><a class="topbar-right-cart click-item" href="./cart.html"> 
               <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path>
               </svg></a>
@@ -101,7 +101,63 @@
               </div>
             </div>
           </div>
+          <div class="add-course-btn">
+            <div class="button-solid-primary button"><span>Add Course</span>
+            </div>
+          </div>
           <div class="course-list"> </div>
+          <div class="course-edit-popup course-popup">
+            <div class="overlay"></div>
+            <div class="popup-content"> 
+              <div class="course-edit-item-block popup-content-edit-block">
+                <label>Name</label>
+                <input class="edit-name-input" type="text">
+              </div>
+              <div class="course-edit-item-block popup-content-edit-block">
+                <label>Image Link</label>
+                <input class="edit-img-link-input" type="text">
+              </div>
+              <div class="course-edit-item-block popup-content-edit-block">
+                <label>Price</label>
+                <input class="edit-price-input" type="number">
+              </div>
+              <div class="popup-error-text popup-content-edit-block edit-error-text">Có trường thông tin không phù hợp</div>
+              <div class="course-edit-item-block edit-course-submit popup-btn popup-content-edit-block">
+                <div class="button-solid-primary button"><span>Done</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="course-add-popup course-popup">
+            <div class="overlay"></div>
+            <div class="popup-content"> 
+              <div class="course-add-item-block popup-content-add-block">
+                <label>Name</label>
+                <input class="add-name-input" type="text">
+              </div>
+              <div class="course-add-item-block popup-content-add-block">
+                <label>Image Link</label>
+                <input class="add-img-link-input" type="text">
+              </div>
+              <div class="course-add-item-block popup-content-add-block">
+                <label>Type</label>
+                <input class="add-type-input" type="text">
+              </div>
+              <div class="course-add-item-block popup-content-add-block">
+                <label>Student </label>
+                <input class="add-student-input" type="number">
+              </div>
+              <div class="course-add-item-block popup-content-add-block">
+                <label>Price</label>
+                <input class="add-price-input" type="number">
+              </div>
+              <div class="popup-error-text popup-content-add-block add-error-text">Có trường thông tin trống</div>
+              <div class="popup-content-add-block add-course-submit popup-btn">
+                <div class="button-solid-primary button"><span>Add</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <footer class="footer">

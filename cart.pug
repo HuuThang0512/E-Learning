@@ -21,11 +21,11 @@ block main
                                 th Course
                                 th Price
                         tbody 
-                            +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
-                            +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
-                            +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
-                            +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
-                            +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
+                            //- +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
+                            //- +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
+                            //- +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
+                            //- +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
+                            //- +cartCourse("", "The Python Mega Course: Build 10 Real World Applications", "23.33")
                 .cart-content-right
                     .cart-checkout 
                         .cart-checkout-total 
@@ -38,3 +38,6 @@ block main
                         .cart-coupon-input
                             input(type="text" placeholder="Coupon Code")
                             .cart-coupon-btn Apply
+
+append js 
+    script(src="./js/cart.js") 

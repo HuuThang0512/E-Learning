@@ -14,16 +14,46 @@ block main
           +selective("Sort by", "Lastest", ["Oldest", "Newest", "Oldest", "Newest",]) 
           +selective("Category", "All Category", ["Oldest", "Newest", "Oldest", "Newest",]) 
           +selective("Rating", "4 Star & Up", ["Oldest", "Newest", "Oldest", "Newest",]) 
+      .add-course-btn
+        +solidBtnPri("Add Course")
       .course-list 
-        //- +courseItem("./images/course-html.png 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
-        //- +courseItem("../images/course-css.jpg 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
-        //- +courseItem("../images/course-js.png 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
-        //- +courseItem("../images/course-js.png 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
-        //- +courseItem("./images/course-html.png 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
-        //- +courseItem("../images/course-css.jpg 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
-        //- +courseItem("../images/course-js.png 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
-        //- +courseItem("../images/course-python.png 2x", "Developments", "Data Structures & Algorithms Essentials (2023)", "5.0", "865.255", "49.9")
+      .course-edit-popup.course-popup
+        .overlay
+        .popup-content 
+          .course-edit-item-block.popup-content-edit-block
+            label Name
+            input(type="text").edit-name-input
+          .course-edit-item-block.popup-content-edit-block
+            label Image Link
+            input(type="text").edit-img-link-input
+          .course-edit-item-block.popup-content-edit-block
+            label Price
+            input(type="number").edit-price-input
+          .popup-error-text.popup-content-edit-block.edit-error-text Có trường thông tin không phù hợp
+          .course-edit-item-block.edit-course-submit.popup-btn.popup-content-edit-block
+            +solidBtnPri("Done")
   
+      .course-add-popup.course-popup
+            .overlay
+            .popup-content 
+              .course-add-item-block.popup-content-add-block
+                label Name
+                input(type="text").add-name-input
+              .course-add-item-block.popup-content-add-block
+                label Image Link
+                input(type="text").add-img-link-input
+              .course-add-item-block.popup-content-add-block
+                label Type
+                input(type="text").add-type-input
+              .course-add-item-block.popup-content-add-block
+                label Student 
+                input(type="number").add-student-input
+              .course-add-item-block.popup-content-add-block
+                label Price
+                input(type="number").add-price-input
+              .popup-error-text.popup-content-add-block.add-error-text Có trường thông tin trống
+              .popup-content-add-block.add-course-submit.popup-btn
+                +solidBtnPri("Add")
 append js 
   script(src="./js/course.js" type="module")
 

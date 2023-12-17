@@ -10,13 +10,22 @@ JS:
 <!-- - Đăng kí tài khoản -->
 <!-- - Render khóa học -->
 <!-- - Fix topbar -->
+<!-- - Click course open course detail -->
+<!-- - Add course to cart -->
+<!-- - Buy Course -->
+<!-- - Code page my-course -->
+<!-- - Delete Course -->
+<!-- - Add course -->
+<!-- - Edit course -->
+<!-- - Click Overlay -->
+<!-- - Render structure -->
+<!-- - Click on structure item open content -->
 
 - Click selective
 - Click checkout-payment
+- Fix course cart header bottom
+- Fix myCourse
 
+Only Admin Account
 
-- Edit course
-- Add course
-- Click on structure item open content
-- Code page my-course
-- Add course to cart
+<!--  -->

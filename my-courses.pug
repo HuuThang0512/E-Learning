@@ -1,0 +1,23 @@
+extends ./views/layout/_layout
+append stylesheet
+  link(rel="stylesheet", href="./styles/course.css")
+block title
+  title Home
+block main
+    .course-block 
+      .course-navbar  
+        .course-navbar-left 
+          .course-navbar-greet
+            p Have a good day 
+            h3 Courses
+        .course-navbar-right
+          +selective("Sort by", "Lastest", ["Oldest", "Newest", "Oldest", "Newest",]) 
+          +selective("Category", "All Category", ["Oldest", "Newest", "Oldest", "Newest",]) 
+          +selective("Rating", "4 Star & Up", ["Oldest", "Newest", "Oldest", "Newest",]) 
+      .course-list 
+  
+append js 
+  script(src="./js/my-course.js" type="module")
+
+
+    

@@ -102,35 +102,40 @@ block main
           p Price: 
           span 14.00
         .course-detail-right-infor 
-          .course-detail-infor-item 
+          .course-detail-infor-item.course-detail-infor-item-duration 
             .course-detail-infor-item-left 
               include ./views/icons/_icon-clock
               p Course Duration
-            .course-detail-infor-item-right 6 Month 
-          .course-detail-infor-item 
+            .course-detail-infor-item-right
+              span 6 Month 
+          .course-detail-infor-item.course-detail-infor-item-lever 
             .course-detail-infor-item-left 
               include ./views/icons/_icon-level
               p Course Level
-            .course-detail-infor-item-right Beginner and Intermediate 
-          .course-detail-infor-item 
+            .course-detail-infor-item-right
+              span Beginner and Intermediate 
+          .course-detail-infor-item.course-detail-infor-item-student 
             .course-detail-infor-item-left 
               include ./views/icons/_icon-user
               p Students Enrolled
-            .course-detail-infor-item-right 69,419,618 
-          .course-detail-infor-item 
+            .course-detail-infor-item-right
+              span 69,419,618 
+          .course-detail-infor-item.course-detail-infor-item-lang1 
             .course-detail-infor-item-left 
               include ./views/icons/_icon-notepad
               p Language
-            .course-detail-infor-item-right English
-          .course-detail-infor-item 
+            .course-detail-infor-item-right
+              span English
+          .course-detail-infor-item.course-detail-infor-item-lang2 
             .course-detail-infor-item-left 
               include ./views/icons/_icon-notepad
               p Subtittle Language
-            .course-detail-infor-item-right Vietnamese 
+            .course-detail-infor-item-right
+              span Vietnamese 
         .course-detail-right-payment 
-          a(href="./cart.html")
+          a(href="./cart.html").course-detail-add-cart-btn
             +solidBtnPri("Add to cart") 
-          a(href="./checkout.html") 
+          a(href="./checkout.html").course-detail-payment-btn
             +blurBtnPri("Buy now")
           .course-detail-right-payment-note 
             span Note: 
@@ -174,7 +179,8 @@ block main
             .course-detail-right-share-item
               include ./views/icons/_icon-whatapps
 
-
+append js 
+  script(src="./js/course-detail.js") 
         
           
              

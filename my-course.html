@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Home</title>
     <link rel="shortcut icon" href="./images/logo_hat.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/app.css">
-    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="./styles/course.css">
   </head>
   <body>
     <div class="wrapper">
@@ -45,49 +45,63 @@
         </div>
       </div>
       <div class="main"> 
-        <div class="cart-wrapper"> 
-          <div class="cart-top"> 
-            <div class="cart-top-title">Shoping Cart </div>
-            <div class="cart-top-path">Home / Shopping Cart</div>
-          </div>
-          <div class="cart-main"> 
-            <div class="cart-main-heading">Shopping Cart <span>3</span></div>
-            <div class="cart-content">
-              <div class="cart-content-left">
-                <table class="cart-course-list">
-                  <thead> 
-                    <tr> 
-                      <th> </th>
-                      <th>Course</th>
-                      <th>Price</th>
-                    </tr>
-                  </thead>
-                  <tbody> </tbody>
-                </table>
+        <div class="course-block"> 
+          <div class="course-navbar"> 
+            <div class="course-navbar-left"> 
+              <div class="course-navbar-greet">
+                <p>Have a good day </p>
+                <h3>Courses</h3>
               </div>
-              <div class="cart-content-right">
-                <div class="cart-checkout"> 
-                  <div class="cart-checkout-total"> 
-                    <p>Total: </p><span>75 </span>
-                  </div><a class="cart-checkout-btn" href="./checkout.html">
-                    <div class="button-solid-primary button"><span>Proceed to checkout</span>
-                      <div class="btn-icon-arrow-right"> 
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24px" height="24px" stroke-width="1.5" stroke="#fff">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                        </svg>
-                      </div>
-                    </div></a>
+            </div>
+            <div class="course-navbar-right">
+              <div class="selective">
+                <div class="selective-label">Sort by</div>
+                <div class="selective-section">
+                  <p>Lastest</p>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6L8 11L3 6" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <ul class="selective-items">
+                    <li class="selective-item click-item">Oldest</li>
+                    <li class="selective-item click-item">Newest</li>
+                    <li class="selective-item click-item">Oldest</li>
+                    <li class="selective-item click-item">Newest</li>
+                  </ul>
                 </div>
-                <div class="cart-coupon"> 
-                  <div class="cart-coupon-label">Apply Coupon Code </div>
-                  <div class="cart-coupon-input">
-                    <input type="text" placeholder="Coupon Code">
-                    <div class="cart-coupon-btn">Apply</div>
-                  </div>
+              </div>
+              <div class="selective">
+                <div class="selective-label">Category</div>
+                <div class="selective-section">
+                  <p>All Category</p>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6L8 11L3 6" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <ul class="selective-items">
+                    <li class="selective-item click-item">Oldest</li>
+                    <li class="selective-item click-item">Newest</li>
+                    <li class="selective-item click-item">Oldest</li>
+                    <li class="selective-item click-item">Newest</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="selective">
+                <div class="selective-label">Rating</div>
+                <div class="selective-section">
+                  <p>4 Star &amp; Up</p>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6L8 11L3 6" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <ul class="selective-items">
+                    <li class="selective-item click-item">Oldest</li>
+                    <li class="selective-item click-item">Newest</li>
+                    <li class="selective-item click-item">Oldest</li>
+                    <li class="selective-item click-item">Newest</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
+          <div class="course-list"> </div>
         </div>
       </div>
       <footer class="footer">
@@ -186,6 +200,6 @@
     </div>
     <script src="./js/data.js"> </script>
     <script src="./js/app.js" type="module"> </script>
-    <script src="./js/cart.js"> </script>
+    <script src="./js/my-course.js" type="module"></script>
   </body>
 </html>

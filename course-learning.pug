@@ -35,52 +35,12 @@ block main
                         .course-learn-attach-left
                             include ./views/icons/_icon-file
                             span What's HTML
-                        a.course-learn-attach-btn
+                        a.course-learn-attach-btn(target = "_blank")
                             +solidBtnPri("Open File")
 
             .course-learn-right
                 .course-learn-right-title.course-learn-title Course Contents 
                 .course-learn-structure.structure
-                    .course-learn-structure-chapter.structure-chapter.active
-                        .course-learn-structure-title.structure-title
-                            include ./views/icons/_icon-arrow-down
-                            p Getting Started 
-                        ul.course-learn-structure-list.structure-list
-                            li.course-learn-structure-item.structure-item 
-                                include ./views/icons/_icon-notebook
-                                p What’s is HTML?
-                            li.course-learn-structure-item.structure-item 
-                                include ./views/icons/_icon-notebook
-                                p Get familiar with some common tags in HTML
-                            li.course-learn-structure-item.structure-item 
-                                include ./views/icons/_icon-notebook
-                                p What’s is HTML?
-                    .course-learn-structure-chapter.structure-chapter
-                        .course-learn-structure-title.structure-title
-                            include ./views/icons/_icon-arrow-down
-                            p Getting Started 
-                        ul.course-learn-structure-list.structure-list
-                            li.course-learn-structure-item.structure-item 
-                                include ./views/icons/_icon-notebook
-                                p What’s is HTML?
-                            li.course-learn-structure-item.structure-item 
-                                include ./views/icons/_icon-notebook
-                                p Get familiar with some common tags in HTML
-                            li.course-learn-structure-item.structure-item 
-                                include ./views/icons/_icon-notebook
-                                p What’s is HTML?
-                    .course-learn-structure-chapter.structure-chapter
-                        .course-learn-structure-title.structure-title
-                            include ./views/icons/_icon-arrow-down
-                            p Getting Started 
-                        ul.course-learn-structure-list.structure-list
-                            li.course-learn-structure-item.structure-item 
-                                include ./views/icons/_icon-notebook
-                                p What’s is HTML?
-                            li.course-learn-structure-item.structure-item 
-                                include ./views/icons/_icon-notebook
-                                p Get familiar with some common tags in HTML
-                            li.course-learn-structure-item.structure-item 
-                                include ./views/icons/_icon-notebook
-                                p What’s is HTML?
               
+append js 
+    script(src="./js/course-learning.js") 

@@ -1,0 +1,77 @@
+@use "../../abstracts" as abs;
+
+.course-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  opacity: 0;
+  height: 0%;
+  transition: opacity 0.15s linear;
+  &.active {
+    height: 100%;
+    opacity: 1;
+    & .popup-content {
+      display: block;
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.popup-content {
+  position: absolute;
+  display: none;
+  gap: 24px;
+  padding: 60px 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 6px;
+  width: 50%;
+  height: fit-content;
+  justify-content: center;
+  overflow-y: auto;
+  z-index: 100;
+  & label {
+    font-weight: 500;
+  }
+  & input {
+    border: 1px solid abs.$gray4;
+    padding: 12px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  &-edit-block,
+  &-add-block {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &.popup-btn .button{
+      width: 100%;
+      text-align: center;
+      display: block;
+      margin-top: 20px;
+    }
+  }
+  &-edit-block:not(:first-child),
+  &-add-block:not(:first-child) {
+    margin-top: 24px;
+  }
+}
+.popup-error-text {
+  color: red;
+  font-weight: 500;
+  text-align: center;
+  visibility: hidden;
+  &.active {
+    visibility: visible;
+  }
+}
