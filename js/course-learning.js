@@ -1,9 +1,9 @@
 let idCourseNow = JSON.parse(localStorage.getItem("idCourseNow"));
 let contentCourseNow = JSON.parse(
   localStorage.getItem("coursesContent")
-).filter((course) => course.id == idCourseNow)[0].content;
+).filter((course) => course.id == idCourse)[0].content;
 const courseName = JSON.parse(localStorage.getItem("allCourses")).filter(
-  (course) => course.id == idCourseNow
+  (course) => course.id == idCourse
 )[0].name;
 const structureBlock = $(".structure");
 let idNow = JSON.parse(localStorage.getItem("numberOfContent"));
