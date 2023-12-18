@@ -25,7 +25,8 @@ function addAccount() {
       username: usernameFill,
       password: passwordFill,
       admin: false,
-      cartCourse: new Set(),
+      cartCourse: [],
+      buyCourse: []
     };
     console.log(newAccount);
     userAccounts.push(newAccount);

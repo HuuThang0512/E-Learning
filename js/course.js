@@ -25,6 +25,7 @@ if (adminCheck) {
 
 // Render Courses
 function renderCourse(courses) {
+  console.log("Da dang nhap");
   courses.forEach((course) => {
     if (adminCheck || !signed) {
       let courseItem = document.createElement("div");
@@ -139,9 +140,13 @@ courseItems.forEach((courseItem) => {
   courseItem.addEventListener("click", (e) => {
     let corseMore = e.target.closest(".course-more");
     if (!corseMore) {
-      let idCourse = e.target.closest(".course-item").getAttribute("id");
-      localStorage.setItem("idCourseNow", JSON.stringify(idCourse));
-      window.location.href = "./course-detail.html";
+      if (signed) {
+        let idCourse = e.target.closest(".course-item").getAttribute("id");
+        localStorage.setItem("idCourseNow", JSON.stringify(idCourse));
+        window.location.href = "./course-detail.html";
+      } else {
+        window.location.href = "./sign_in.html";
+      }
     } else {
       // clickOverExit();
       corseMore.classList.toggle("active");
@@ -233,5 +238,5 @@ overlays.forEach((overlay) => {
   overlay.addEventListener("click", () => {
     console.log(2);
     $(".course-popup.active").classList.remove("active");
-  })
+  });
 });
