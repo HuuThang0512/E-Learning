@@ -59,7 +59,7 @@ rendercourse();
 // Calulate Total Price
 function calTotalPrice() {
   let calTotalPrice = cartCourses.reduce((a, c) => a + +c.price, 0);
-  totalPrice.innerText = calTotalPrice;
+  totalPrice.innerText = +calTotalPrice.toFixed(2);
 }
 calTotalPrice();
 
