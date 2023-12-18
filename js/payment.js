@@ -25,6 +25,7 @@ buyBtn.addEventListener("click", () => {
   accounts.forEach((user) => {
     if (user.id == idUser) {
       user.buyCourse.push(idCartCourse);
+      user.buyCourse = user.buyCourse.flat();
       user.cartCourse = [];
     }
   });
