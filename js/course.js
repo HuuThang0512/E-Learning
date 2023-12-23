@@ -214,7 +214,7 @@ addCourseSubmit.addEventListener("click", () => {
       $(".add-error-text").classList.remove("active");
     }
     let newCourse = {
-      id: allCourses[allCourses.length - 1].id,
+      id: allCourses[allCourses.length - 1].id + 1,
       name: addNameValue,
       img: imgLinkValue,
       type: typeValue,
