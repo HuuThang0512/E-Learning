@@ -1,6 +1,6 @@
 @use "../abstracts" as abs;
 
-.topbar {
+.topbar { 
   &-home {
     display: flex;
     align-items: center;
@@ -54,20 +54,26 @@
       cursor: pointer;
     }
   }
+  &-username {
+    font-weight: 600;
+    line-height: 1.37;
+    color: abs.$gray9;
+    cursor: pointer;
+    display: none;
+  }
   &.is-login {
-    & .user-avatar {
+    & .user-avatar,
+    & .topbar-right-my-courses,
+    & .logout-btn,
+    & .topbar-username {
       display: block;
     }
     & .topbar-login-block {
       display: none;
     }
-    & .topbar-right-my-courses {
-      display: block;
-    }
-    & .logout-btn {
-      display: block;
-    }
   }
 }
 
-.logout-btn {display: none;}
+.logout-btn {
+  display: none;
+}

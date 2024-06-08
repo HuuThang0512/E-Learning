@@ -6,6 +6,13 @@ let userAmount = userAccounts.length;
 const createBtn = $(".create-account-btn");
 const formErrorTxt = $(".form-error");
 
+function validateName(userName) {
+  return (
+    !Number.isInteger(parseInt(userName.split("")[0])) &&
+    userName.length >= 8 &&
+    userName.length <= 12
+  );
+}
 function addAccount() {
   const firstNameFill = String($("#first-name-fill").value);
   const lastNameFill = String($("#last-name-fill").value);
@@ -13,12 +20,15 @@ function addAccount() {
   const emailFill = String($("#email-fill").value);
   const passwordFill = String($("#password-fill").value);
   const passwordRepeatFill = String($("#password-repeat-fill").value);
+  const findUser = userAccounts.filter(
+    (account) => account.username == usernameFill
+  );
   if (
-    usernameFill != "" &&
+    validateName(usernameFill) &&
     passwordFill != "" &&
     passwordRepeatFill != "" &&
     passwordFill == passwordRepeatFill &&
-    userAccounts.filter((account) => account.username == usernameFill)
+    findUser.length == 0
   ) {
     let newAccount = {
       id: `${++userAmount}`,
@@ -26,7 +36,7 @@ function addAccount() {
       password: passwordFill,
       admin: false,
       cartCourse: [],
-      buyCourse: []
+      buyCourse: [],
     };
     console.log(newAccount);
     userAccounts.push(newAccount);
@@ -39,5 +49,3 @@ function addAccount() {
 }
 
 createBtn.addEventListener("click", addAccount);
-
-createBtn.addEventListener("click", () => {});

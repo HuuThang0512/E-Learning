@@ -721,17 +721,18 @@ body {
   display: none;
   cursor: pointer;
 }
-.topbar.is-login .user-avatar {
+.topbar-username {
+  font-weight: 600;
+  line-height: 1.37;
+  color: #1D2026;
+  cursor: pointer;
+  display: none;
+}
+.topbar.is-login .user-avatar, .topbar.is-login .topbar-right-my-courses, .topbar.is-login .logout-btn, .topbar.is-login .topbar-username {
   display: block;
 }
 .topbar.is-login .topbar-login-block {
   display: none;
-}
-.topbar.is-login .topbar-right-my-courses {
-  display: block;
-}
-.topbar.is-login .logout-btn {
-  display: block;
 }
 
 .logout-btn {

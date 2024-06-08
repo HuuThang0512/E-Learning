@@ -5,11 +5,22 @@ const $$ = document.querySelectorAll.bind(document);
 
 const btnToTop = $(".btn-to-top");
 const topbar = $(".topbar");
+const topbarUsername = $(".topbar-username")
 
 if (btnToTop) {
   btnToTop.addEventListener("click", () => {
     window.scrollTo(0, 0);
   });
+}
+
+const userIdNow = JSON.parse(localStorage.getItem("userId"));
+const userNameNow = userIdNow ? JSON.parse(localStorage.getItem("accounts")).filter(
+  (user) => user.id == userIdNow
+)[0].username : undefined;
+
+// Hien thi ten nguoi dung
+if (topbarUsername) {
+  topbarUsername.innerHTML = userNameNow;
 }
 
 // Su kien trang dang nhap

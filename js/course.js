@@ -165,7 +165,6 @@ editCourses.forEach((edt) => {
     } else if (e.target.closest(".course-edit-item")) {
       let idEdtCourse = e.target.closest(".course-item").getAttribute("id");
       let courseEdit = allCourses.filter((course) => course.id == idEdtCourse);
-
       editCourse(courseEdit[0]);
     }
     localStorage.setItem("allCourses", JSON.stringify(allCourses));
